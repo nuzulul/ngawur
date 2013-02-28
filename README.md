@@ -1,0 +1,4 @@
+ngawur
+======
+
+bank script
