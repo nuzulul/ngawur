@@ -12,13 +12,14 @@
  * @example Visit http://leandrovieira.com/projects/jquery/lightbox/ for more informations about this jQuery plugin
  */
  
- #fb_gallery h2 {
+ #fb_gallery h3 {
  	background:none;
  	border:solid 1px black;
+ 	padding: 5px;
  }
  
- #fb_gallery li {
- 	text-decoration:none;
+ #fb_gallery ul {
+ 	list-style-type: none;
  }
  
 #jquery-overlay {
