@@ -4,7 +4,7 @@ $(document).ready(function()
 	var page_id = $('#fb_gallery').attr('page_id');
 
 	//init the gallery
-	$('#fb_gallery').append('<img id="loading_gallery" src="/images/ajax-loader.gif" />');
+	$('#fb_gallery').append('<img id="loading_gallery" src="https://sites.google.com/site/nuzulz/download/ajax-loader.gif?attredirects=0" />');
 	$('#fb_gallery').append('<ul id="albums"></ul>');
 	$('#fb_gallery').append('<div id="fb-root"></div>');
 
@@ -27,7 +27,7 @@ $(document).ready(function()
 	    	var html = '' +
 			'<li id="album_' + key + '"> ' +
 				'<a href="#" class="album_link_' + key + '"><img id="album_cover_' + key + '" /></a>' +
-				'<img id="loading_' + key + '" src="/images/ajax-loader.gif" />' +
+				'<img id="loading_' + key + '" src="https://sites.google.com/site/nuzulz/download/ajax-loader.gif?attredirects=0" />' +
 				'<a href="#" class="album_link_' + key + '"><h2>' + value.name + '</h2></a>' +
 				'<p>' + value.count + ' photos</p>' +
 			'</li>';
