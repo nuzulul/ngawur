@@ -28,7 +28,7 @@ $(document).ready(function()
 			'<li id="album_' + key + '"> ' +
 				'<a href="#" class="album_link_' + key + '"><img id="album_cover_' + key + '" /></a>' +
 				'<img id="loading_' + key + '" src="https://sites.google.com/site/nuzulz/download/ajax-loader.gif?attredirects=0" />' +
-				'<a href="#" class="album_link_' + key + '"><h2>' + value.name + '</h2></a>' +
+				'<a href="#" class="album_link_' + key + '"><h2>' + value.name + '(' + value.count + ' photos)</h2></a>' +
 				'<p>' + value.count + ' photos</p>' +
 			'</li>';
 
