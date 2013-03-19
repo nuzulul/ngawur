@@ -28,7 +28,9 @@
      ref.parentNode.insertBefore(js, ref);
    }(document, /*debug*/ false));
 
-
+FB.api('/me', function(response) {
+  alert('Your name is ' + response.name);
+});
 </script>
 </body>
 </html>
