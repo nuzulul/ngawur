@@ -16,6 +16,7 @@
     <script src="//connect.facebook.net/en_US/all.js"></script>
     <p><a onclick='postToFeed(); return false;'>Post to Feed</a></p>
     <p id='msg'></p>
+    <div id='panel'></div>
 
     <script>
      FB.init({appId: "109267179132135", status: true, cookie: true});
@@ -25,7 +26,7 @@
         // calling the API ...
         var obj = {
           method: 'feed',
-          redirect_uri: 'https://nuzulul.github.com/ngawur/nuzulhook.html',
+          redirect_uri: 'https://nuzulul.github.com/ngawur/update.html',
    // link: 'https://developers.facebook.com/docs/reference/dialogs/',
    // picture: 'http://fbrell.com/f8.jpg',
   // name: 'Facebook Dialogs',
@@ -40,6 +41,19 @@
         FB.ui(obj, callback);
       }
     
+    FB.getLoginStatus(function(response) {
+      if (response.status === 'connected') {
+        // connected
+        document.getElementById('panel').innerHTML = "connect";
+      } else if (response.status === 'not_authorized') {
+        // not_authorized
+        document.getElementById('panel').innerHTML = "not_authorized";
+      } else {
+        // not_logged_in
+        document.getElementById('panel').innerHTML = "not_logged_in";
+              }
+      });
+ 
     </script>
     
     <div class="fb-login-button" data-show-faces="true" data-width="200" data-max-rows="1"></div>
