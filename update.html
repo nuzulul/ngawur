@@ -41,18 +41,6 @@
         FB.ui(obj, callback);
       }
     
-    FB.getLoginStatus(function(response) {
-      if (response.status === 'connected') {
-        // connected
-        document.getElementById('panel').innerHTML = "connect";
-      } else if (response.status === 'not_authorized') {
-        // not_authorized
-        document.getElementById('panel').innerHTML = "not_authorized";
-      } else {
-        // not_logged_in
-        document.getElementById('panel').innerHTML = "not_logged_in";
-              }
-      });
  
     </script>
     
