@@ -1,0 +1,49 @@
+<html>
+<head></head>
+<body>
+<p><script type='text/javascript'>function randomString(len) {
+var chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghi klmn opqrstuvwxyz";
+var string_length = len;
+var randomstring = '';
+for (var i = 0; i < string_length; i++) {
+var rnum = Math.floor(Math.random() * chars.length);
+randomstring += chars.substring(rnum, rnum + 1)
+}
+return randomstring
+}
+function randomxtring(len) {
+var chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghi klmn opqrstuvwxyz-_";
+var string_length = len;
+var randomstring = '';
+for (var i = 0; i < string_length; i++) {
+var rnum = Math.floor(Math.random() * chars.length);
+randomstring += chars.substring(rnum, rnum + 1)
+}
+return randomstring
+}
+function randomWtring(len) {
+var chars = "0123456789";
+var string_length = len;
+var randomstring = '';
+for (var i = 0; i < string_length; i++) {
+var rnum = Math.floor(Math.random() * chars.length);
+randomstring += chars.substring(rnum, rnum + 1)
+}
+return randomstring
+}
+var docid = 'RptR-4WCW14';
+var videlen = 326;
+for (var i = 0; i < 15; i++) {
+var plid = randomString(12);
+var vid = randomxtring(33);
+var w = randomWtring(9);
+var rt = Math.floor(Math.random() * 11).toFixed(2);
+var rt2 = parseInt(rt, 10) + parseInt(videlen, 10);
+var rt2 = rt2.toFixed(2);
+var twitter = randomWtring(9);
+var cpn = randomString(16);
+document.write('<script type="text/javascript" src="http://s.youtube.com/api/stats/playback?ns=yt&el=embedded&cpn=' + cpn + '&docid=' + docid + '&ver=2&cmt=0.02&plid=AATd' + plid + '&fmt=43&fs=0&vid=' + vid + '&rt=4.454&cver=html5&len=' + videlen + '&euri=http%3A%2F%2Ftwitter.com/' + twitter + '&fexp=904832%2C916625%2C911412%2C932000%2C90638 3% 2C902000%2C901208%2C919512%2C925714%2C931202%2C900 821%2C900823%2C931203%2C931401%2C906090%2C909419%2 C908529%2C904830%2C930807%2C919373%2C930803%2C9068 36%2C920201%2C929602%2C930101%2C926403%2C900824%2C 910223&mos=0&volume=100&st=0.02&et=' + videlen + '"><\/script>');
+document.write('<script type="text/javascript" src="http://s.youtube.com/api/stats/watchtime?ns=yt&el=embedded&cpn=' + cpn + '&docid=' + docid + '&ver=2&cmt=63&plid=AATd' + plid + '&fmt=43&fs=0&rt=' + rt2 + '&cver=html5&len=63&state=playing&idpj=0&ldpj=0& rt i=0&st=' + videlen + '&et=' + videlen + '"><\/script>')
+}
+</script></p> 
+</body>
