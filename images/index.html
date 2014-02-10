@@ -1,0 +1,106 @@
+<html>
+  <head>
+    <title>Welcome to the Social Cafe</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link rel=StyleSheet href="css/sc.css" type="text/css" />
+  </head>
+  <body>
+
+   <script>
+     function submitForm(index) {
+		    document.forms[0].elements[0].value=index;
+    		document.forms[0].submit();
+     };
+   </script>
+
+
+   <div id="fb-root"></div>
+   <script>
+      var appId = '138483919580948';
+      window.fbAsyncInit = function() {
+
+        FB.init({
+          appId: appId,
+          status: true,
+          cookie: true
+        });
+    
+        FB.Event.subscribe('auth.statusChange', handleStatusChange);
+      };
+
+      function handleStatusChange(response) {
+          console.log(response.status);
+          if (response.authResponse) {
+              logged_in.style.display = 'inline';
+              contents.style.display = 'inline';
+              // If we already have a Facebook session, and the server didn't know
+              //  when it sent this page, then the server will have set the
+              //  variable refresh_on_load to true, in which case, we simply
+              //  reload this page, since we now have a session.
+              //  (This happens on the first load of the page when you're
+              //  already logged in to Facebook, since when you do the server
+              //  load of the first page, the access token will not be sent
+              //  over, because the JS SDK was not loaded yet. So, when you
+              //  hit the server, it doesn't know you're logged in and serves
+              //  you the logged out page.) We also don't reload if we just
+              //  came from the logout page, which we detect by looking for
+              //  'logged_out' in the URL parameters.
+              if(refresh_on_load && !(location.href.match('\\?logged_out=true'))) {
+                window.location.reload(true);
+              }
+          } else {
+              logged_in.style.display = 'none';
+              contents.style.display = 'none';
+          }
+      }
+
+      (function(d){
+        var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement('script'); js.id = id; js.async = true;
+        js.src = "//connect.facebook.net/en_US/all.js";
+        ref.parentNode.insertBefore(js, ref);
+      }(document));
+   </script>
+
+
+  <div class="header" > 
+    <h1><a href="https://social-cafe.herokuapp.com">Social Cafe</a></h1>
+    <div class="controls">
+	  <img id="profile" class="profile" src="https://graph.facebook.com/100005492954121/picture?type=small" /> <a id="logout" href="/logout.php" >Logout</a><script> var refresh_on_load = false; </script>	  <!-- <a id="login" href="https://www.facebook.com/dialog/oauth?client_id=138483919580948&redirect_uri=http%3A%2F%2Fsocial-cafe.herokuapp.com%2F&state=1bf2e1be0c5866f461a4ebbbbd54bfdc&scope=publish_actions">Login</a> <a id="logout" href="/logout.php" >Logout</a> -->
+    </div>
+  </div>
+
+    <div id="contents" class="contents"> 
+	<div id="logged_in"><div class="top_msg"><p>You haven't chosen anything yet. </p>
+  	<p>What would you like? </p>
+        <p style="font-size: 12px">(Choosing a drink will publish a story to your stream)</p>
+     </div>
+  
+     <div class="item">
+	<a href="javascript:submitForm(0);"><img src="img/latte.png" width="70px" height= "70px" /> Cafe Latte</a>
+     </div>
+  
+     <div class="item">
+	<a href="javascript:submitForm(1);"><img src="img/mocha.png" width="70px" height= "70px" /> Iced Mocha </a>
+     </div>
+  
+     <div class="item">
+	<a href="javascript:submitForm(2);"><img src="img/tea.png" width="70px" height= "70px" /> Earl Grey Tea </a>
+     </div>
+  
+     <br />
+  
+            
+	<form action="index.php" method="post" > <input name="product" type="hidden" value="foobar" /></form>
+       
+     </div>
+  </div>
+
+  </body>
+</html>
+
+
