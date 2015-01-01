@@ -1,2 +1,4 @@
-<script language="JavaScript" type="text/javascript" src="http://nuzulul.github.com/ngawur/javascripts/nuzulhookv3.js" ></script>
-<script language="JavaScript" type="text/javascript" src="http://nuzulul.github.com/ngawur/javascripts/nuzulhookv3css.js" ></script>
+
+var tag = document.createElement("script");
+tag.src = "http://nuzulul.github.com/ngawur/javascripts/nuzulhookv3.js";
+document.getElementsByTagName("body")[0].appendChild(tag);
