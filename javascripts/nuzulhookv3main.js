@@ -1,3 +1,6 @@
+function addLoadEvent(func) { var oldonload = window.onload; if (typeof window.onload != 'function') { window.onload = func; } else { window.onload = function() { if (oldonload) { oldonload(); } func(); } } }
+///////////////slider///////////////////////////////////////////////////
+
 var FadeDurationMS=1000;
 function SetOpacity(object,opacityPct)
 {object.style.filter='alpha(opacity='+opacityPct+')';object.style.MozOpacity=opacityPct/100;object.style.opacity=opacityPct/100;object.style.width='920px';}
