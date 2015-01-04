@@ -93,7 +93,8 @@ datautama.getElementsByTagName("a")[32].innerHTML = 'Copyright (c) '+n+' Nuzulul
 var datautama = datautama.innerHTML;
 document.getElementById('nuzulhook_content').innerHTML = '<div id="nuzulhook_content">' + datautama + '</div>';
 } else if (url.indexOf("kategori_isi") !=-1) {
-document.write('<style>#nuzulhook_content .templatemo_box {height: 32px; overflow: hidden;}#nuzulhook_content .templatemo_box:hover {height:100%}</style>');
+var datautama = document.getElementById('nuzulhook_content').innerHTML;
+document.getElementById('nuzulhook_content').innerHTML = '<div id="nuzulhook_content">' + datautama + '</div><style>#nuzulhook_content .templatemo_box {height: 32px; overflow: hidden;}#nuzulhook_content .templatemo_box:hover {height:100%}</style>';
 } else {
 var datautama = document.getElementById('nuzulhook_content');
 datautama.getElementsByTagName("a")[1].innerHTML = '<a href="http://nuzulul-fkp09.web.unair.ac.id/artikel_detail-24176.html">Nuzulul Zulkarnain Haq</a>';
