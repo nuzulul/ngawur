@@ -1,3 +1,4 @@
+///////////////slider///////////////////////////////////////////////////
 var FadeDurationMS=1000;
 function SetOpacity(object,opacityPct)
 {object.style.filter='alpha(opacity='+opacityPct+')';object.style.MozOpacity=opacityPct/100;object.style.opacity=opacityPct/100;object.style.width='920px';}
@@ -31,7 +32,7 @@ var content = '<div id="nuzulhook_content">' + document.getElementById('template
 var right_sidebar = '<div id="templatemo_right_sidebar">' + document.getElementById('templatemo_right_sidebar').innerHTML + '</div>';
 
 var content = left_sidebar + content ;
-var menupopup1 = '<div id="menupopup1"> 	<ul class="parent"> 		<li><a href="http://nuzulul-fkp09.web.unair.ac.id">Home</a></li> 		<li><a href="http://nuzulul-fkp09.web.unair.ac.id/artikel_detail-24176.html">About</a></li><li><a href="http://nuzulul-fkp09.web.unair.ac.id/artikel_detail-24186.html">Buku Tamu</a></li> 		                                           <li><a href="http://nuzulul-fkp09.web.unair.ac.id/artikel_detail-24192.html">Download</a></li>                 <li><a href="http://nuzulul-fkp09.web.unair.ac.id/artikel_detail-24196.html">Album</a></li>                 <li><a href="#">More</a>                 <ul class="child"><li><a href="http://nuzulul-fkp09.web.unair.ac.id/artikel_detail-24185.html">Askep</a></li><li><a href="http://nuzulul-fkp09.web.unair.ac.id/artikel_detail-24183.html">Sahabat</a></li>                             <li><a href="http://www.google.com/cse?cx=002432522631165541499%3Aokf_w9ptqto&ie=UTF-8&q=site%3Anuzulul-fkp09.web.unair.ac.id&sa=Telusuri&siteurl=nuzulul-fkp09.web.unair.ac.id%2F#gsc.tab=0&gsc.q=site%3Anuzulul-fkp09.web.unair.ac.id&gsc.page=1" target="_blank">Daftar Isi</a></li>                </ul>                </li>		 	</ul> </div>';
+var menupopup1 = '<div id="menupopup1"> 	<ul class="parent"> 		<li><a href="http://nuzulul-fkp09.web.unair.ac.id">Home</a></li> 		<li><a href="http://nuzulul-fkp09.web.unair.ac.id/artikel_detail-24176.html">About</a></li><li><a href="#">Topik</a><ul class="child">'+document.getElementsByClassName('side_menu')[0].innerHTML+'</ul></li><li><a href="http://nuzulul-fkp09.web.unair.ac.id/artikel_detail-24186.html">Buku Tamu</a></li> 		                                           <li><a href="http://nuzulul-fkp09.web.unair.ac.id/artikel_detail-24192.html">Download</a></li>                                  <li><a href="#">More</a>                 <ul class="child"><li><a href="http://nuzulul-fkp09.web.unair.ac.id/artikel_detail-24185.html">Askep</a></li><li><a href="http://nuzulul-fkp09.web.unair.ac.id/artikel_detail-24196.html">Album</a></li><li><a href="http://nuzulul-fkp09.web.unair.ac.id/artikel_detail-24183.html">Sahabat</a></li>                             <li><a href="http://www.google.com/cse?cx=002432522631165541499%3Aokf_w9ptqto&ie=UTF-8&q=site%3Anuzulul-fkp09.web.unair.ac.id&sa=Telusuri&siteurl=nuzulul-fkp09.web.unair.ac.id%2F#gsc.tab=0&gsc.q=site%3Anuzulul-fkp09.web.unair.ac.id&gsc.page=1" target="_blank">Daftar Isi</a></li>                </ul>                </li>		 	</ul> </div>';
 var medsos = '<div style="width:250px;height:50px;left:420px;top:-50px;position:relative;"> <a href="http://www.facebook.com/nuzulhook" target="_blank"><img src="http://web.unair.ac.id/admin/file/f_13693_logo-fb.jpg" width="50px"></a> <a href="http://www.twitter.com/nuzulhook" target="_blank"><img src="http://web.unair.ac.id/admin/file/f_13693_logo-twitter.jpg" width="50px"></a> <a href="http://www.youtube.com/user/nuzulhook" target="_blank"><img src="http://web.unair.ac.id/admin/file/f_13693_youtube_logo.png" width="50px"></a> <a href="https://instagram.com/nuzulhook" target="_blank"><img src="http://web.unair.ac.id/admin/file/f_13693_instagram-icon.jpg" width="50px"></a> </div>';
 var d = new Date();
 var n = d.getFullYear();
@@ -112,7 +113,8 @@ datautama.getElementsByClassName('templatemo_box')[2].outerHTML = '<div class="t
 datautama.getElementsByClassName('templatemo_box')[3].outerHTML = '<div class="templatemo_box hide">' + datautama.getElementsByClassName('templatemo_box')[3].innerHTML + '</div>';
 datautama.getElementsByClassName('templatemo_box')[4].outerHTML = '<div class="templatemo_box hide">' + datautama.getElementsByClassName('templatemo_box')[4].innerHTML + '</div>';
 var datautama = datautama.innerHTML;
-document.getElementById('nuzulhook_content').innerHTML = '<div id="nuzulhook_content"><div id="nuzulhook_content_top"></div>' + datautama + '<div id="nuzulhook_content_bottom"></div></div><style>#nuzulhook_content .hide {height: 32px; overflow: hidden;}#nuzulhook_content .hide:hover {height:100%}</style>';
+document.getElementById('nuzulhook_content').innerHTML = '<div id="nuzulhook_content"><div id="nuzulhook_content_top"></div>' + datautama + '<div id="nuzulhook_content_bottom"></div></div><style>#nuzulhook_content .hide {height: 32px; overflow: hidden;}#nuzulhook_content .hide:hover {height:100%}object {width:100%;height:650px;}</style>';
+document.getElementById("nuzulhook_content_top").innerHTML='<div class="templatemo_box"><a href="http://nuzulul-fkp09.web.unair.ac.id/artikel_detail-24192.html"><h2><span></span>Download My Project</h2></a><div class="body"><object type="text/html" data="http://nuzulul.github.com/ngawur/homedata.htm" ></object></div></div>';
 }
 
 var disqus_shortname = 'nuzulul';
@@ -122,6 +124,7 @@ dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
 
 var url = document.URL;
 document.getElementById('nuzulhook_share').innerHTML = '<iframe src="//www.facebook.com/plugins/like.php?href='+url+'&width&layout=button&action=like&show_faces=false&share=true&height=35&appId=540320016076725" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:35px;" allowTransparency="true"></iframe>';
+
 
 }
 addLoadEvent(loadScript);
