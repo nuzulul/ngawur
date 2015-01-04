@@ -61,7 +61,7 @@ document.getElementById('nuzulhook_header_top_search').innerHTML = '<div id="sea
 document.getElementById('nuzulhook_nav').innerHTML = "<div id=\"pages\"><div class=\"navigation\"><a class=\"page-numbers\" href=\"index.html?hal=1\">1<\/a><a class=\"page-numbers\" href=\"index.html?hal=2\">2<\/a><a class=\"page-numbers\" href=\"index.html?hal=3\">3<\/a><a class=\"page-numbers\" href=\"index.html?hal=4\">4<\/a><a class=\"page-numbers\" href=\"index.html?hal=5\">5<\/a><a class=\"page-numbers\" href=\"index.html?hal=6\">6<\/a><a class=\"page-numbers\" href=\"index.html?hal=7\">7<\/a><a class=\"page-numbers\" href=\"index.html?hal=8\">8<\/a><a class=\"page-numbers\" href=\"index.html?hal=9\">9<\/a><a class=\"page-numbers\" href=\"index.html?hal=10\">10<\/a><a class=\"page-numbers\" href=\"index.html?hal=11\">11<\/a><a class=\"page-numbers\" href=\"index.html?hal=12\">12<\/a><a class=\"page-numbers\" href=\"index.html?hal=13\">13<\/a><\/div><\/div>";
 document.getElementById('histats_count').innerHTML = document.getElementById('nuzulhook_stats').innerHTML;
 
-RunSlideShow("nuzulhook_header_top_image","nuzulhook_header_top","https://sites.google.com/site/nuzulz/download/headerkampuscunair.jpg;https://sites.google.com/site/nuzulz/download/profilnuzul.jpg",10);
+RunSlideShow("nuzulhook_header_top_image","nuzulhook_header_top","https://sites.google.com/site/nuzulz/download/headerkampuscunair.jpg;https://sites.google.com/site/nuzulz/download/profilnuzul.jpg",5);
 
 var tag = document.createElement("script");
 tag.src = "https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js";
