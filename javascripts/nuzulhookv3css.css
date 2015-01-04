@@ -1,4 +1,4 @@
-body {background:#E9EAED url("asd.jpg");}
+body {background:#E9EAED url("") repeat fixed center center;}
 a:link, a:visited { color: #3A5795; text-decoration: none; font-weight: normal; }
 a:active, a:hover { color: rgb(0, 153, 0); text-decoration: underline; }
 #templatmeo_wrapper { width: 850px; margin: 30px auto;overflow:hidden; }
@@ -29,7 +29,8 @@ a:active, a:hover { color: rgb(0, 153, 0); text-decoration: underline; }
 .more a{background:#E9EAED}
 .side_menu li { padding: 0px; margin: 5px 0px;border-left:2px solid #000 }
 .side_menu li a {background:url();}
-
+.side_menux li { padding: 0px; margin: 5px 0px;border-left:2px solid #000 }
+.side_menux li a {background:url();}
 #nuzulhook_sidebar .templatemo_box {height: 32px; overflow: hidden;}
 #nuzulhook_sidebar .templatemo_box:hover {height:100%}
 
