@@ -1,16 +1,4 @@
-function addLoadEvent(func) {
-  var oldonload = window.onload;
-  if (typeof window.onload != 'function') {
-    window.onload = func;
-  } else {
-    window.onload = function() {
-      if (oldonload) {
-        oldonload();
-      }
-      func();
-    }
-  }
-}
+
 ///////////////slider///////////////////////////////////////////////////
 var FadeDurationMS=1000;
 function SetOpacity(object,opacityPct)
