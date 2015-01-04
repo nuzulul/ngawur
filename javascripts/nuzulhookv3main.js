@@ -79,7 +79,7 @@ datautama.getElementsByTagName("a")[1].innerHTML = '<a href="http://nuzulul-fkp0
 datautama.getElementsByTagName("a")[4].innerHTML = 'Copyright (c) '+n+' Nuzulul Zulkarnain Haq. All rights reserved.<div id="nuzulhook_share"></div><a href="#disqus_thread">Lihat</a>';
 var datautama = datautama.getElementsByClassName('templatemo_box')[0].innerHTML;
 document.getElementById('nuzulhook_content').innerHTML = '<div class="templatemo_box">' + datautama + '</div><div class="templatemo_box"><div class="body"><div id="disqus_thread"></div></div></div>';
-} else if (url.indexOf("index.htm?hal=") !=-1) {
+} else if (url.indexOf("index.html?hal=") !=-1) {
 var datautama = document.getElementById('nuzulhook_content');
 datautama.getElementsByTagName("a")[1].innerHTML = '<a href="http://nuzulul-fkp09.web.unair.ac.id/artikel_detail-24176.html">Nuzulul Zulkarnain Haq</a>';
 datautama.getElementsByTagName("a")[4].innerHTML = 'Copyright (c) '+n+' Nuzulul Zulkarnain Haq. <a href="">Lihat</a>';
