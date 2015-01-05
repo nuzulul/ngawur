@@ -29,7 +29,7 @@ a:active, a:hover { color: rgb(0, 153, 0); text-decoration: underline; }
 .more a{background:#E9EAED}
 .side_menu li { padding: 0px; margin: 5px 0px;border-left:2px solid #000 }
 .side_menu li a {background:url();}
-.side_menux li { padding: 0px; margin: 5px 0px;border-left:2px solid #000 }
+.side_menux li { padding-left: 10px; margin: 5px 0px;border-left:2px solid #000;background:url(); }
 .side_menux li a {background:url();}
 #nuzulhook_sidebar .templatemo_box {height: 32px; overflow: hidden;}
 #nuzulhook_sidebar .templatemo_box:hover {height:100%}
