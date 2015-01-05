@@ -75,10 +75,10 @@ var url = window.location.href;
 if (url.indexOf("artikel_detail") !=-1) {
 var datautama = document.getElementById('nuzulhook_content');
 var datatitle = datautama.getElementsByTagName("a")[0].innerHTML;
-var datatitle = datatitle.replace("<h2>","");
-var datatitle = datatitle.replace("</h2>","");
-var datatitle = datatitle.replace("<span>","");
-var datatitle = datatitle.replace("</span>","");
+datatitle.replace("<h2>","");
+datatitle.replace("</h2>","");
+datatitle.replace("<span>","");
+datatitle.replace("</span>","");
 document.title = datatitle;
 datautama.getElementsByTagName("a")[1].innerHTML = '<a href="http://nuzulul-fkp09.web.unair.ac.id/artikel_detail-24176.html">Nuzulul Zulkarnain Haq</a>';
 datautama.getElementsByTagName("a")[4].innerHTML = 'Copyright (c) '+n+' Nuzulul Zulkarnain Haq. All rights reserved.<div id="nuzulhook_share"></div><a href="#disqus_thread">Lihat</a>';
