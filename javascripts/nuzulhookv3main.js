@@ -74,7 +74,6 @@ document.getElementsByTagName("body")[0].appendChild(tag);
 var url = window.location.href;
 if (url.indexOf("artikel_detail") !=-1) {
 var datautama = document.getElementById('nuzulhook_content');
-document.title = datautama.getElementsByTagName("a")[0].innerHTML;;
 datautama.getElementsByTagName("a")[1].innerHTML = '<a href="http://nuzulul-fkp09.web.unair.ac.id/artikel_detail-24176.html">Nuzulul Zulkarnain Haq</a>';
 datautama.getElementsByTagName("a")[4].innerHTML = 'Copyright (c) '+n+' Nuzulul Zulkarnain Haq. All rights reserved.<div id="nuzulhook_share"></div><a href="#disqus_thread">Lihat</a>';
 var datautama = datautama.getElementsByClassName('templatemo_box')[0].innerHTML;
