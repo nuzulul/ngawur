@@ -19,6 +19,7 @@ a:active, a:hover { color: rgb(0, 153, 0); text-decoration: underline; }
 #nuzulhook_sidebar { float: left; margin-right: 10px; width: 340px; }
 #nuzulhook_content { float: left; width: 500px; }
 #nuzulhook_box {border:1px solid #D3D6DB;margin-bottom: 10px; background:#fff ;}
+#nuzulhook_box h2 { position: relative; height: 25px; margin: 0px; padding: 8px 15px; font-size: 14px; color: #4E5665; font-weight: bold; background:#F6F7F8  }
 
 #nuzulhook_content_wrapper .templatemo_box { border:1px solid #D3D6DB;margin-bottom: 10px; background:#fff ; }
 #nuzulhook_content_wrapper .templatemo_box .body { padding: 5px 15px; }
