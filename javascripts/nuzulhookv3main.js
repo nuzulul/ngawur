@@ -25,7 +25,8 @@ function RunSlideShow(pictureID,backgroundID,imageFiles,displaySecs)
 				         
 function loadScript()
 {
-var likebutton = '<div id="nuzulhook_box"><div id="likefbatas"><a href="http://facebook.com/nuzulhook/">facebook</a></div></div><div id="nuzulhook_box"><div  id="tweets">Tweets</div></div>';
+var livechat = '<div id="nuzulhook_box"><h2>Buku Tamu - Live Chat</h2><div id="livechat"><a href="http://nuzulul-fkp09.web.unair.ac.id/artikel_detail-24186.html">Buku Tamu</a></div></div>';
+var likebutton = '<div id="nuzulhook_box"><div id="likefbatas"><a href="http://facebook.com/nuzulhook/">facebook</a></div></div>'+livechat+'<div id="nuzulhook_box"><div  id="tweets">Tweets</div></div>';
 var left_sidebar = '<div id="nuzulhook_sidebar"><div id="nuzulhook_sidebar_top"></div>' + likebutton + document.getElementById('templatemo_left_sidebar').innerHTML + ''+ document.getElementById('templatemo_right_sidebar').innerHTML + '<div id="nuzulhook_box"><div id="histats_count"></div></div> <div id="nuzulhook_sidebar_bottom"></div></div>';
 var content = '<div id="nuzulhook_content">' + document.getElementById('templatemo_content').innerHTML + '<div id="nuzulhook_nav"></div></div>';
 var right_sidebar = '<div id="templatemo_right_sidebar">' + document.getElementById('templatemo_right_sidebar').innerHTML + '</div>';
@@ -40,7 +41,8 @@ document.getElementById('templatmeo_wrapper').innerHTML= '<div id="nuzulhook_hea
 document.getElementById('templatemo_footer_wrapper').innerHTML='';
 document.getElementById('liketwitteratas').innerHTML = "<div id=\"liketwitteratas\"><iframe src=\"http://nuzulul.github.com/ngawur/liketwitter.html\" scrolling=\"no\" frameborder=\"0\" style=\"border:none; overflow:hidden; width:150px; height:25px;\" allowTransparency=\"true\"><\/iframe><\/div>";
 document.getElementById('likefbatas').innerHTML = "<div id=\"likefbatas\"><iframe src=\"http://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fnuzulhook&width=320&height=290&colorscheme=light&show_faces=true&header=true&stream=false&show_border=false&appId=172259479541279\" scrolling=\"no\" frameborder=\"0\" style=\"border:none; overflow:hidden; width:340px; height:290px;\" allowTransparency=\"true\"><\/iframe><\/div>";
-document.getElementById('tweets').innerHTML = "<div id=\"tweets\"><iframe src=\"http://nuzulul.github.com/ngawur/tweetszul.html\" scrolling=\"no\" frameborder=\"0\" style=\"border:none; overflow:hidden; width:340px; height:290px;\" allowTransparency=\"true\"><\/iframe><\/div>";
+document.getElementById('tweets').innerHTML = "<iframe src=\"http://nuzulul.github.com/ngawur/tweetszul.html\" scrolling=\"no\" frameborder=\"0\" style=\"border:none; overflow:hidden; width:340px; height:450px;\" allowTransparency=\"true\"><\/iframe><style>#tweets {height:250px;overflow:hidden;} #tweets:hover {height:100%;}</style>";
+document.getElementById('livechat').innerHTML = "<iframe id='livechatiframe' src=\"http://nuzulul.github.com/ngawur/nuzulhooklivechat.html\" scrolling=\"yes\" frameborder=\"0\" style=\"border:none; overflow:scroll; width:340px; height:450px;\" allowTransparency=\"true\"><\/iframe><style>#livechat {height:290px;overflow:hidden;} #livechat:hover {height:100%;}</style>";
 document.getElementById('nuzulhook_header_top_search').innerHTML = '<div id="search_form"><div id="gsearch"><form action="http://www.google.com/cse" id="cse-search-box" target="_blank"><div> <input type="hidden" name="cx" value="002432522631165541499:okf_w9ptqto" /> <input type="hidden" name="ie" value="UTF-8" /> <input type="text" name="q" size="30" /> <input type="submit" name="sa" value="Search" /></div></form> </div></div> ';
 document.getElementById('nuzulhook_nav').innerHTML = "<div id=\"pages\"><div class=\"navigation\"><a class=\"page-numbers\" href=\"index.html?hal=1\">1<\/a><a class=\"page-numbers\" href=\"index.html?hal=2\">2<\/a><a class=\"page-numbers\" href=\"index.html?hal=3\">3<\/a><a class=\"page-numbers\" href=\"index.html?hal=4\">4<\/a><a class=\"page-numbers\" href=\"index.html?hal=5\">5<\/a><a class=\"page-numbers\" href=\"index.html?hal=6\">6<\/a><a class=\"page-numbers\" href=\"index.html?hal=7\">7<\/a><a class=\"page-numbers\" href=\"index.html?hal=8\">8<\/a><a class=\"page-numbers\" href=\"index.html?hal=9\">9<\/a><a class=\"page-numbers\" href=\"index.html?hal=10\">10<\/a><a class=\"page-numbers\" href=\"index.html?hal=11\">11<\/a><a class=\"page-numbers\" href=\"index.html?hal=12\">12<\/a><a class=\"page-numbers\" href=\"index.html?hal=13\">13<\/a><\/div><\/div>";
 document.getElementById('histats_count').innerHTML = document.getElementById('nuzulhook_stats').innerHTML;
@@ -74,6 +76,12 @@ document.getElementsByTagName("body")[0].appendChild(tag);
 var url = window.location.href;
 if (url.indexOf("artikel_detail") !=-1) {
 var datautama = document.getElementById('nuzulhook_content');
+var mytitle = datautama.getElementsByTagName("a")[0].innerHTML;
+var mytitle = mytitle.replace("<h2>","");
+var mytitle = mytitle.replace("</h2>","");
+var mytitle = mytitle.replace("<span>","");
+var mytitle = mytitle.replace("</span>","");
+document.title = mytitle;
 datautama.getElementsByTagName("a")[1].innerHTML = '<a href="http://nuzulul-fkp09.web.unair.ac.id/artikel_detail-24176.html">Nuzulul Zulkarnain Haq</a>';
 datautama.getElementsByTagName("a")[4].innerHTML = 'Copyright (c) '+n+' Nuzulul Zulkarnain Haq. All rights reserved.<div id="nuzulhook_share"></div><a href="#disqus_thread">Lihat</a>';
 var datautama = datautama.getElementsByClassName('templatemo_box')[0].innerHTML;
