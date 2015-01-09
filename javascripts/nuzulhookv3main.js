@@ -118,13 +118,14 @@ datautama.getElementsByTagName("a")[22].innerHTML = '<a href="http://nuzulul-fkp
 datautama.getElementsByTagName("a")[25].innerHTML = 'Copyright (c) '+n+' Nuzulul Zulkarnain Haq. <a href="">Lihat</a>';
 datautama.getElementsByTagName("a")[29].innerHTML = '<a href="http://nuzulul-fkp09.web.unair.ac.id/artikel_detail-24176.html">Nuzulul Zulkarnain Haq</a>';
 datautama.getElementsByTagName("a")[32].innerHTML = 'Copyright (c) '+n+' Nuzulul Zulkarnain Haq. <a href="">Lihat</a>';
+datautama.getElementsByClassName('templatemo_box')[0].outerHTML = '<div class="templatemo_box hide">' + datautama.getElementsByClassName('templatemo_box')[0].innerHTML + '</div>';
 datautama.getElementsByClassName('templatemo_box')[1].outerHTML = '<div class="templatemo_box hide">' + datautama.getElementsByClassName('templatemo_box')[1].innerHTML + '</div>';
 datautama.getElementsByClassName('templatemo_box')[2].outerHTML = '<div class="templatemo_box hide">' + datautama.getElementsByClassName('templatemo_box')[2].innerHTML + '</div>';
 datautama.getElementsByClassName('templatemo_box')[3].outerHTML = '<div class="templatemo_box hide">' + datautama.getElementsByClassName('templatemo_box')[3].innerHTML + '</div>';
 datautama.getElementsByClassName('templatemo_box')[4].outerHTML = '<div class="templatemo_box hide">' + datautama.getElementsByClassName('templatemo_box')[4].innerHTML + '</div>';
 var datautama = datautama.innerHTML;
 document.getElementById('nuzulhook_content').innerHTML = '<div id="nuzulhook_content"><div id="nuzulhook_content_top"></div>' + datautama + '<div id="nuzulhook_content_bottom"></div></div><style>#nuzulhook_content .hide {height: 32px; overflow: hidden;}#nuzulhook_content .hide:hover {height:100%}object {width:100%;height:650px;}</style>';
-document.getElementById("nuzulhook_content_top").innerHTML='<div class="templatemo_box"><a href="http://nuzulul-fkp09.web.unair.ac.id/artikel_detail-24192.html"><h2><span></span>Download My Project</h2></a><div class="body"><object type="text/html" data="http://nuzulul.github.com/ngawur/homedata.htm" ></object></div></div>';
+document.getElementById("nuzulhook_content_top").innerHTML= document.getElementById("addhomedata").innerHTML;
 }
 
 var disqus_shortname = 'nuzulul';
@@ -134,7 +135,6 @@ dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
 
 var url = document.URL;
 document.getElementById('nuzulhook_share').innerHTML = '<iframe src="//www.facebook.com/plugins/like.php?href='+url+'&width&layout=button&action=like&show_faces=false&share=true&height=35&appId=540320016076725" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:35px;" allowTransparency="true"></iframe>';
-
 
 }
 addLoadEvent(loadScript);
