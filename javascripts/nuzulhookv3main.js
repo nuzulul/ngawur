@@ -129,6 +129,7 @@ document.getElementById("nuzulhook_content_top").innerHTML= document.getElementB
 }
 
 var disqus_shortname = 'nuzulul';
+var disqus_title = document.title;
 var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
 dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
 (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
