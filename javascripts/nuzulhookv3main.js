@@ -1,3 +1,17 @@
+function addLoadEvent(func) {
+  var oldonload = window.onload;
+  if (typeof window.onload != 'function') {
+    window.onload = func;
+  } else {
+    window.onload = function() {
+      if (oldonload) {
+        oldonload();
+      }
+      func();
+    }
+  }
+}
+
 var FadeDurationMS=1000;
 function SetOpacity(object,opacityPct)
 {object.style.filter='alpha(opacity='+opacityPct+')';object.style.MozOpacity=opacityPct/100;object.style.opacity=opacityPct/100;object.style.width='920px';}
@@ -28,6 +42,7 @@ function loadScript()
 var livechat = '<div id="nuzulhook_box"><h2>Buku Tamu - Live Chat</h2><div id="livechat"><a href="http://nuzulul-fkp09.web.unair.ac.id/artikel_detail-24186.html">Buku Tamu</a></div></div>';
 var likebutton = '<div id="nuzulhook_box"><div id="likefbatas"><a href="http://facebook.com/nuzulhook/">facebook</a></div></div>'+livechat+'<div id="nuzulhook_box"><div  id="tweets">Tweets</div></div>';
 var left_sidebar = '<div id="nuzulhook_sidebar"><div id="nuzulhook_sidebar_top"></div>' + likebutton + document.getElementById('templatemo_left_sidebar').innerHTML + ''+ document.getElementById('templatemo_right_sidebar').innerHTML + '<div id="nuzulhook_box"><div id="histats_count"></div></div> <div id="nuzulhook_sidebar_bottom"></div></div>';
+var new_sidebar = '<div id="nuzulhook_sidebar"><div id="nuzulhook_sidebar_top"></div>' + likebutton +''+ document.getElementById('templatemo_right_sidebar').innerHTML + '<div id="nuzulhook_box"><div id="histats_count"></div></div> <div id="nuzulhook_sidebar_bottom"></div></div>';
 var content = '<div id="nuzulhook_content">' + document.getElementById('templatemo_content').innerHTML + '<div id="nuzulhook_nav"></div></div>';
 var right_sidebar = '<div id="templatemo_right_sidebar">' + document.getElementById('templatemo_right_sidebar').innerHTML + '</div>';
 
@@ -124,7 +139,7 @@ datautama.getElementsByClassName('templatemo_box')[2].outerHTML = '<div class="t
 datautama.getElementsByClassName('templatemo_box')[3].outerHTML = '<div class="templatemo_box hide">' + datautama.getElementsByClassName('templatemo_box')[3].innerHTML + '</div>';
 datautama.getElementsByClassName('templatemo_box')[4].outerHTML = '<div class="templatemo_box hide">' + datautama.getElementsByClassName('templatemo_box')[4].innerHTML + '</div>';
 var datautama = datautama.innerHTML;
-document.getElementById('nuzulhook_content').innerHTML = '<div id="nuzulhook_content"><div id="nuzulhook_content_top"></div>' + datautama + '<div id="nuzulhook_content_bottom"></div></div><style>#nuzulhook_content .hide {height: 32px; overflow: hidden;}#nuzulhook_content .hide:hover {height:100%}object {width:100%;height:650px;}</style>';
+document.getElementById('nuzulhook_content').innerHTML = '<div id="nuzulhook_content"><div id="nuzulhook_content_top"></div><div id="feed"></div>' + datautama + '<div id="nuzulhook_content_bottom"></div></div><style>#nuzulhook_content .hide {height: 32px; overflow: hidden;}#nuzulhook_content .hide:hover {height:100%}object {width:100%;height:650px;}</style>';
 document.getElementById("nuzulhook_content_top").innerHTML= document.getElementById("addhomedata").innerHTML;
 }
 
@@ -136,6 +151,7 @@ dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
 
 var url = document.URL;
 document.getElementById('nuzulhook_share').innerHTML = '<iframe src="//www.facebook.com/plugins/like.php?href='+url+'&width&layout=button&action=like&show_faces=false&share=true&height=35&appId=540320016076725" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:35px;" allowTransparency="true"></iframe>';
+
 
 }
 addLoadEvent(loadScript);
