@@ -2,7 +2,7 @@ body {background:#E9EAED url("") repeat fixed center center;}
 a:link, a:visited { color: #3A5795; text-decoration: none; font-weight: normal; }
 a:active, a:hover { color: rgb(0, 153, 0); text-decoration: underline; }
 #templatmeo_wrapper { width: 850px; margin: 30px auto;overflow:hidden; }
-#nuzulhook_header { border:1px solid #D3D6DB;clear: both; width: 850px; height: 360px; padding: 0px 0px; background:#fff url("https://sites.google.com/site/nuzulz/download/headerkampuscunair.jpg") repeat scroll 0% 0%; }
+#nuzulhook_header { clear: both; width: 850px; height: 360px; padding: 0px 0px; background:#fff url("https://sites.google.com/site/nuzulz/download/headerkampuscunair.jpg") repeat scroll 0% 0%; }
 #nuzulhook_header_top {height:300px;background:#000 url("https://sites.google.com/site/nuzulz/download/headerkampuscunair.jpg");overflow:hidden;}
 #nuzulhook_header_top_image {height:300px;}
 #nuzulhook_header_top_trans {height:300px;background:url('https://sites.google.com/site/nuzulz/download/trans.png') repeat-x scroll left 0px bottom -1px transparent;position:relative;top:-300px;}
@@ -45,3 +45,6 @@ a:active, a:hover { color: rgb(0, 153, 0); text-decoration: underline; }
 .page-numbers{padding:4px 9px 4px 9px !important;border:solid 1px #DCDCDC !important;border-color:#3390CA !important;order-radius:3px !important;-moz-border-radius:3px !important;-webkit-border-radius:3px !important;color:#fff !important;margin-right:3px !important;border-color:#478223 !important;background:#599F2F !important;background:-moz-linear-gradient(top,#9FE355 1px,#79BF4A 1px,#599F2F) !important;background:-webkit-gradient(linear,0 0,0 100%,color-stop(0.02,#9FE355),color-stop(0.02,#79BF4A),color-stop(1,#599F2F)) !important;}
 .navigation a{color:#707070 !important;background:#FFFFFF !important;border-radius:3px !important;-moz-border-radius:3px !important;-webkit-border-radius:3px !important;padding:6px 9px 6px 9px !important;margin-right:3px !important;text-decoration:none !important;font-size:12px !important;}
 .navigation a:hover{color:#fff !important;border-color:#478223 !important;background:#599F2F !important;background:-moz-linear-gradient(top,#048DC6 1px,#048DC6 1px,#048DC6) !important;background:-webkit-gradient(linear,0 0,0 100%,color-stop(0.02,#9FE355),color-stop(0.02,#79BF4A),color-stop(1,#599F2F)) !important;}
+
+.adddata {height:200px;overflow:scroll}
+.adddata:hover {height:100%}
