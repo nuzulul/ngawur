@@ -12,6 +12,72 @@ function addLoadEvent(func) {
   }
 }
 
+//jam//
+date = new Date; year = date.getFullYear(); month = date.getMonth(); months = new Array('Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'); d = date.getDate(); day = date.getDay(); days = new Array('Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'); h = date.getHours(); if(h<10) { h = "0"+h; } m = date.getMinutes(); if(m<10) { m = "0"+m; } s = date.getSeconds(); if(s<10) { s = "0"+s; } result = ''+days[day]+' '+d+' '+months[month]+' '+year; document.getElementById("waktuhome").innerHTML = result;
+////feed///
+var url = window.location.href;
+if (url == 'http://nuzulul-fkp09.web.unair.ac.id/'){
+    google.load("feeds", "1");
+
+    function initialize() {
+      var feed = new google.feeds.Feed("http://feeds.feedburner.com/hook-blog-modification");
+      feed.load(function(result) {
+        if (!result.error) {
+          var container = document.createElement("div");
+          for (var i = 0; i < result.feed.entries.length; i++) {
+            var entry = result.feed.entries[i];
+            var div2 = document.createElement("li");
+            div2.innerHTML = '<a href="'+entry.link+'">'+entry.title+'</a>';
+            container.appendChild(div2);
+          }
+          document.getElementById("feed").innerHTML = document.getElementById("feed").innerHTML+'<div class="templatemo_box  adddata1">	 <a href="http://nuzulul-fkp09.web.unair.ac.id/kategori_isi-36459-08%20Blog%20Modification.html"><h2><span></span>Tutorial Modifikasi Blog Unair</h2></a> <div class="body"><div class="news_box"> <ul class="side_menu">'+container.innerHTML+'</ul> <div class="cleaner"></div></div></div></div>';
+        }
+      });
+      var feed = new google.feeds.Feed("http://feeds.feedburner.com/hook-my-laptop");
+      feed.load(function(result) {
+        if (!result.error) {
+          var container = document.createElement("div");
+          for (var i = 0; i < result.feed.entries.length; i++) {
+            var entry = result.feed.entries[i];
+            var div2 = document.createElement("li");
+            div2.innerHTML = '<a href="'+entry.link+'">'+entry.title+'</a>';
+            container.appendChild(div2);
+          }
+          document.getElementById("feed").innerHTML = document.getElementById("feed").innerHTML+'<div class="templatemo_box  adddata1">	 <a href="http://nuzulul-fkp09.web.unair.ac.id/kategori_isi-34116-02%20My%20Laptop.html"><h2><span></span>Kumpulan Tutorial Bermanfaat</h2></a> <div class="body"><div class="news_box"> <ul class="side_menu">'+container.innerHTML+'</ul> <div class="cleaner"></div></div></div></div>';
+        }
+      });
+            var feed = new google.feeds.Feed("http://feeds.feedburner.com/hook-my-project");
+      feed.load(function(result) {
+        if (!result.error) {
+          var container = document.createElement("div");
+          for (var i = 0; i < result.feed.entries.length; i++) {
+            var entry = result.feed.entries[i];
+            var div2 = document.createElement("li");
+            div2.innerHTML = '<a href="'+entry.link+'">'+entry.title+'</a>';
+            container.appendChild(div2);
+          }
+          document.getElementById("feed").innerHTML = document.getElementById("feed").innerHTML+'<div class="templatemo_box  adddata1">	 <a href="http://nuzulul-fkp09.web.unair.ac.id/kategori_isi-46409-09%20My%20Project.html"><h2><span></span>My Project</h2></a> <div class="body"><div class="news_box"> <ul class="side_menu">'+container.innerHTML+'</ul> <div class="cleaner"></div></div></div></div>';
+        }
+      });
+      
+      var feed = new google.feeds.Feed("http://feeds.feedburner.com/hook-disqus");
+      feed.load(function(result) {
+        if (!result.error) {
+          var container = document.createElement("div");
+          for (var i = 0; i < result.feed.entries.length; i++) {
+            var entry = result.feed.entries[i];
+            var div2 = document.createElement("li");
+            div2.innerHTML = '<a href="'+entry.link+'">'+entry.content+'</a>';
+            container.appendChild(div2);
+          }
+          document.getElementById("feed").innerHTML = document.getElementById("feed").innerHTML+'<div class="templatemo_box  adddata1">	 <a href="http://nuzulul-fkp09.web.unair.ac.id/artikel_detail-24186.html"><h2><span></span>Komentar Terbaru</h2></a> <div class="body"><div class="news_box"> <ul class="side_menu">'+container.innerHTML+'</ul> <div class="cleaner"></div></div></div></div>';
+        }
+      });
+
+    }
+    google.setOnLoadCallback(initialize);
+}
+//////////slider/////
 var FadeDurationMS=1000;
 function SetOpacity(object,opacityPct)
 {object.style.filter='alpha(opacity='+opacityPct+')';object.style.MozOpacity=opacityPct/100;object.style.opacity=opacityPct/100;object.style.width='920px';}
@@ -51,7 +117,7 @@ var menupopup1 = '<div id="menupopup1"> 	<ul class="parent"> 		<li><a href="http
 var medsos = '<div style="width:250px;height:50px;left:420px;top:-50px;position:relative;"> <a href="http://www.facebook.com/nuzulhook" target="_blank"><img src="http://web.unair.ac.id/admin/file/f_13693_logo-fb.jpg" width="50px"></a> <a href="http://www.twitter.com/nuzulhook" target="_blank"><img src="http://web.unair.ac.id/admin/file/f_13693_logo-twitter.jpg" width="50px"></a> <a href="http://www.youtube.com/user/nuzulhook" target="_blank"><img src="http://web.unair.ac.id/admin/file/f_13693_youtube_logo.png" width="50px"></a> <a href="https://instagram.com/nuzulhook" target="_blank"><img src="http://web.unair.ac.id/admin/file/f_13693_instagram-icon.jpg" width="50px"></a> </div>';
 var d = new Date();
 var n = d.getFullYear();
-var foot = 'Copyright (c) 2011-'+n+' <a href="http://nuzulul-fkp09.web.unair.ac.id/">Nuzulul Zulkarnain Haq</a>. All rights reserved.</br>Seluruh artikel di nuzulul-fkp09.web.unair.ac.id dapat anda perbanyak, cetak, modifikasi dan distribusikan secara bebas asal tetap mencantumkan nama penulis dan URL lengkap artikel.</br>Powered by <a href="unair.ac.id" target="_blank">Universitas Airlangga</a>';
+var foot = 'Copyright (c) 2011-'+n+' <a href="http://nuzulul-fkp09.web.unair.ac.id/">Nuzulul Zulkarnain Haq</a>. All rights reserved.</br>Seluruh artikel di nuzulul-fkp09.web.unair.ac.id dapat anda perbanyak, cetak, modifikasi dan distribusikan secara bebas asal tetap mencantumkan nama penulis dan URL lengkap artikel.</br>Powered by <a href="http://unair.ac.id" target="_blank">Universitas Airlangga</a>';
 document.getElementById('templatmeo_wrapper').innerHTML= '<div id="nuzulhook_header"><div id="nuzulhook_header_top"><img id="nuzulhook_header_top_image" style="opacity: 0;" src="https://sites.google.com/site/nuzulz/download/headerkampuscunair.jpg" width="100px"><div id="nuzulhook_header_top_trans"></div><div id="nuzulhook_header_top_line"></div><div id="nuzulhook_header_top_search"></div></div><div id="nuzulhook_header_bottom"></div><div id="nuzulhook_header_poto"><img src="https://sites.google.com/site/nuzulz/download/profilnuzul.jpg" width="100%"><div id="nuzulhook_header_poto_border"></div></div><div id="nuzulhook_header_title"><h2>Nuzulul Zulkarnain Haq</h2><h3>A Hybrid Nurse & Blogger Universitas Airlangga</h3><div id="liketwitteratas"><a href="http://twitter.com/nuzulhook/">twitter</a></div></div><div id="nuzulhook_header_menu"> ' + menupopup1 + medsos + '</div> </div><div id="nuzulhook_content_wrapper">' + content + '</div><div id="nuzulhook_footer"> '+ foot +'</div>';
 document.getElementById('templatemo_footer_wrapper').innerHTML='';
 document.getElementById('liketwitteratas').innerHTML = "<div id=\"liketwitteratas\"><iframe src=\"http://nuzulul.github.com/ngawur/liketwitter.html\" scrolling=\"no\" frameborder=\"0\" style=\"border:none; overflow:hidden; width:150px; height:25px;\" allowTransparency=\"true\"><\/iframe><\/div>";
