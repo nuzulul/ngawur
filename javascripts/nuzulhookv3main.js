@@ -12,71 +12,7 @@ function addLoadEvent(func) {
   }
 }
 
-//jam//
-date = new Date; year = date.getFullYear(); month = date.getMonth(); months = new Array('Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'); d = date.getDate(); day = date.getDay(); days = new Array('Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'); h = date.getHours(); if(h<10) { h = "0"+h; } m = date.getMinutes(); if(m<10) { m = "0"+m; } s = date.getSeconds(); if(s<10) { s = "0"+s; } result = ''+days[day]+' '+d+' '+months[month]+' '+year; document.getElementById("waktuhome").innerHTML = result;
-////feed///
-var url = window.location.href;
-if (url == 'http://nuzulul-fkp09.web.unair.ac.id/'){
-    google.load("feeds", "1");
 
-    function initialize() {
-      var feed = new google.feeds.Feed("http://feeds.feedburner.com/hook-blog-modification");
-      feed.load(function(result) {
-        if (!result.error) {
-          var container = document.createElement("div");
-          for (var i = 0; i < result.feed.entries.length; i++) {
-            var entry = result.feed.entries[i];
-            var div2 = document.createElement("li");
-            div2.innerHTML = '<a href="'+entry.link+'">'+entry.title+'</a>';
-            container.appendChild(div2);
-          }
-          document.getElementById("feed").innerHTML = document.getElementById("feed").innerHTML+'<div class="templatemo_box  adddata1">	 <a href="http://nuzulul-fkp09.web.unair.ac.id/kategori_isi-36459-08%20Blog%20Modification.html"><h2><span></span>Tutorial Modifikasi Blog Unair</h2></a> <div class="body"><div class="news_box"> <ul class="side_menu">'+container.innerHTML+'</ul> <div class="cleaner"></div></div></div></div>';
-        }
-      });
-      var feed = new google.feeds.Feed("http://feeds.feedburner.com/hook-my-laptop");
-      feed.load(function(result) {
-        if (!result.error) {
-          var container = document.createElement("div");
-          for (var i = 0; i < result.feed.entries.length; i++) {
-            var entry = result.feed.entries[i];
-            var div2 = document.createElement("li");
-            div2.innerHTML = '<a href="'+entry.link+'">'+entry.title+'</a>';
-            container.appendChild(div2);
-          }
-          document.getElementById("feed").innerHTML = document.getElementById("feed").innerHTML+'<div class="templatemo_box  adddata1">	 <a href="http://nuzulul-fkp09.web.unair.ac.id/kategori_isi-34116-02%20My%20Laptop.html"><h2><span></span>Kumpulan Tutorial Bermanfaat</h2></a> <div class="body"><div class="news_box"> <ul class="side_menu">'+container.innerHTML+'</ul> <div class="cleaner"></div></div></div></div>';
-        }
-      });
-            var feed = new google.feeds.Feed("http://feeds.feedburner.com/hook-my-project");
-      feed.load(function(result) {
-        if (!result.error) {
-          var container = document.createElement("div");
-          for (var i = 0; i < result.feed.entries.length; i++) {
-            var entry = result.feed.entries[i];
-            var div2 = document.createElement("li");
-            div2.innerHTML = '<a href="'+entry.link+'">'+entry.title+'</a>';
-            container.appendChild(div2);
-          }
-          document.getElementById("feed").innerHTML = document.getElementById("feed").innerHTML+'<div class="templatemo_box  adddata1">	 <a href="http://nuzulul-fkp09.web.unair.ac.id/kategori_isi-46409-09%20My%20Project.html"><h2><span></span>My Project</h2></a> <div class="body"><div class="news_box"> <ul class="side_menu">'+container.innerHTML+'</ul> <div class="cleaner"></div></div></div></div>';
-        }
-      });
-      
-      var feed = new google.feeds.Feed("http://feeds.feedburner.com/hook-disqus");
-      feed.load(function(result) {
-        if (!result.error) {
-          var container = document.createElement("div");
-          for (var i = 0; i < result.feed.entries.length; i++) {
-            var entry = result.feed.entries[i];
-            var div2 = document.createElement("li");
-            div2.innerHTML = '<a href="'+entry.link+'">'+entry.content+'</a>';
-            container.appendChild(div2);
-          }
-          document.getElementById("feed").innerHTML = document.getElementById("feed").innerHTML+'<div class="templatemo_box  adddata1">	 <a href="http://nuzulul-fkp09.web.unair.ac.id/artikel_detail-24186.html"><h2><span></span>Komentar Terbaru</h2></a> <div class="body"><div class="news_box"> <ul class="side_menu">'+container.innerHTML+'</ul> <div class="cleaner"></div></div></div></div>';
-        }
-      });
-
-    }
-    google.setOnLoadCallback(initialize);
-}
 //////////slider/////
 var FadeDurationMS=1000;
 function SetOpacity(object,opacityPct)
