@@ -48,4 +48,5 @@ a:active, a:hover { color: rgb(0, 153, 0); text-decoration: underline; }
 
 .adddata {height:200px;overflow:scroll}
 .adddata:hover {height:100%}
+.beranda_menu {padding-left:0px;}
 .beranda_menu li {float:left;text-decoration:none;margin-left:15px;}
