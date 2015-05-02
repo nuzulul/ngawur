@@ -1,0 +1,42 @@
+<html>
+<body style="margin:0px 0px;">
+
+<div id="twtbox"></div>    
+    
+<script>
+    window.twttr = (function(d, s, id) {
+        var t, js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://platform.twitter.com/widgets.js";
+        fjs.parentNode.insertBefore(js, fjs);
+        return window.twttr || (t = {
+            _e: [],
+            ready: function(f) {
+                t._e.push(f)
+            }
+        });
+    }(document, "script", "twitter-wjs"));
+</script>
+
+<script>
+var $_GET = {};
+document.location.search.replace(/\??(?:([^=]+)=([^&]*)&?)/g, function () {
+function decode(s) {
+return decodeURIComponent(s.split("+").join(" "));
+}
+$_GET[decode(arguments[1])] = decode(arguments[2]);
+});
+var url = $_GET['url'];
+var link = document.createElement('a');
+link.setAttribute('href', 'https://twitter.com/share');
+link.setAttribute('class', 'twitter-share-button');
+link.setAttribute('style', 'margin-top:5px;');
+link.setAttribute("data-url" ,url) ;
+tweetdiv  =  document.getElementById('twtbox');
+tweetdiv.appendChild(link);
+twttr.widgets.load(); //very important
+</script>
+</body>
+</html>
