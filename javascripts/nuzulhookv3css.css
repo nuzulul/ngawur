@@ -1,7 +1,7 @@
 body {background:#E9EAED url("") repeat fixed center center;}
 a:link, a:visited { color: #3A5795; text-decoration: none; font-weight: normal; }
 a:active, a:hover { color: rgb(0, 153, 0); text-decoration: underline; }
-#templatmeo_wrapper { width: 850px; margin: 30px auto;overflow:hidden; }
+#nuzulhook_wrapper { width: 850px; margin: 30px auto;overflow:hidden; }
 #nuzulhook_header { clear: both; width: 850px; height: 360px; padding: 0px 0px; background:#fff url("https://sites.google.com/site/nuzulz/download/headerkampuscunair.jpg") repeat scroll 0% 0%; }
 #nuzulhook_header_top {height:300px;background:#000 url("https://sites.google.com/site/nuzulz/download/headerkampuscunair.jpg");overflow:hidden;}
 #nuzulhook_header_top_image {height:300px;}
@@ -37,7 +37,6 @@ a:active, a:hover { color: rgb(0, 153, 0); text-decoration: underline; }
 #nuzulhook_sidebar .templatemo_box {height: 32px; overflow: hidden;}
 #nuzulhook_sidebar .templatemo_box:hover {height:100%}
 
-#templatemo_footer {width:0px;}
 #nuzulhook_footer { border:1px solid #D3D6DB;clear: both; width: 830px; height: 100%; padding: 10px; background:#fff;font-size:80%;line-height:1em; }
 
 #menupopup1{overflow:hidden;width:640px;height:40px;padding:5px 0 0 0}#menupopup1,#menupopup1 ul li:hover ul.child li a{background:#fff}#menupopup1 ul{margin:0 -40px;}#menupopup1 ul li{margin:0 5px 0 5px; border-right:1px solid #4E5665;}#menupopup1 ul li{list-style-type:none;float:left}#menupopup1 ul li a{font:14px arial;text-decoration:none;margin:0 10px 0 0;color:#4E5665}#menupopup1 ul li ul.child{display:none}#menupopup1 ul li:hover ul.child,#menupopup1 ul li:hover ul.child li a{display:block}#menupopup1 ul li:hover ul.child{position:absolute;z-index:2;text-align:left}#menupopup1 ul li:hover ul.child li a{padding:10px 20px 10px 20px;margin:0 0 0 10px}#menupopup1 ul li:hover ul.child li{float:none;margin:0 0 0 -30px}#menupopup1 ul li a:hover{text-decoration:underline}
