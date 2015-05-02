@@ -28,12 +28,11 @@ return decodeURIComponent(s.split("+").join(" "));
 }
 $_GET[decode(arguments[1])] = decode(arguments[2]);
 });
-var url = $_GET['url'];
+var url = encodeURIComponent($_GET['url']);
 var link = document.createElement('a');
 link.setAttribute('href', 'https://twitter.com/share');
 link.setAttribute('class', 'twitter-share-button');
 link.setAttribute("data-counturl" ,url) ;
-link.setAttribute("data-text" ,url) ;
 link.setAttribute("data-url" ,url) ;
 tweetdiv  =  document.getElementById('twtbox');
 tweetdiv.appendChild(link);
