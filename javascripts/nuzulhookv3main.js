@@ -154,7 +154,7 @@ dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
 (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
 
 var url = document.URL;
-document.getElementById('nuzulhook_share').innerHTML = '<iframe src="//www.facebook.com/plugins/like.php?href='+url+'&width&layout=button&action=like&show_faces=false&share=true&height=35&appId=540320016076725" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:35px;" allowTransparency="true"></iframe><iframe src="//nuzulul.github.io/ngawur/tweetbutton.html?url='+url+'" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:35px;" allowTransparency="true"></iframe>';
+document.getElementById('nuzulhook_share').innerHTML = '<iframe src="//www.facebook.com/plugins/like.php?href='+url+'&width&layout=button&action=like&show_faces=false&share=true&height=35&appId=540320016076725" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:35px;" allowTransparency="true"></iframe><iframe src="//nuzulul.github.io/ngawur/tweetbutton.html?url='+encodeURIComponent(url)+'" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:35px;" allowTransparency="true"></iframe>';
 
 
 }
