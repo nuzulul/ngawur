@@ -33,7 +33,7 @@ var link = document.createElement('a');
 link.setAttribute('href', 'https://twitter.com/share');
 link.setAttribute('class', 'twitter-share-button');
 link.setAttribute('style', 'margin-top:5px;');
-link.setAttribute("data-url" ,url) ;
+link.setAttribute("data-text" ,url) ;
 tweetdiv  =  document.getElementById('twtbox');
 tweetdiv.appendChild(link);
 twttr.widgets.load(); //very important
