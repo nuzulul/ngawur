@@ -107,10 +107,12 @@ else if (url.indexOf("artikel_detail") !=-1) {
             container.appendChild(div2);
           }
           
+          var ntitle = document.title;
           var link = document.createElement('a');
           link.setAttribute('href', 'https://twitter.com/share');
           link.setAttribute('class', 'twitter-share-button');
           link.setAttribute('data-count', 'none');
+          link.setAttribute('data-text', ntitle);
           tweetdiv  =  document.getElementById('nuzulhook_share');
           tweetdiv.appendChild(link);
           twttr.widgets.load();          
