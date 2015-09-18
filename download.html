@@ -1,5 +1,12 @@
 <html>
 <body>
+     <script>
+     var item = {
+          folderlocker:"http://folderlocker.com",
+          smsgateway:"smsgateway.com"
+          
+     };
+     </script>
 <link href='http://newblogger-tricks.webege.com/locker-new.css' rel='stylesheet' type='text/css'/>
 
 <article id="download-default-usage">
@@ -34,6 +41,22 @@ appId: "706100816073140"
 });
 });;;;
      
+var $_GET = {};
+
+document.location.search.replace(/\??(?:([^=]+)=([^&]*)&?)/g, function () {
+    function decode(s) {
+        return decodeURIComponent(s.split("+").join(" "));
+    }
+
+    $_GET[decode(arguments[1])] = decode(arguments[2]);
+});
+
+var did = $_GET['download'];
+if (did !== undefined) 
+{
+     var link = item[did];
+     document.getElementById("download-hidden").innerHTML = '<a href="'+link+'" target="_blank" title="Download">'+link+'</a>";
+}
 </script>
 
 </body>
