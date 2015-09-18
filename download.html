@@ -1,112 +1,41 @@
 <html>
-<head></head>
 <body>
+<link href='http://newblogger-tricks.webege.com/locker-new.css' rel='stylesheet' type='text/css'/>
 
-  
-               <script src="http://demo.phpgang.com/social-locker-jquery/jquery-1.8.0.min.js"></script>
-<script type="text/javascript" src="http://demo.phpgang.com/social-locker-jquery/social-locker.js"></script>
-<script type="text/javascript">
-    jQuery.noConflict();                    
-    jQuery(document).ready(function ($) {
-        $(".to-lock-1").sociallocker({
-            text: {
-                header: "The content is locked!",
-                message: "Please support us, click like button, tweet, follow, plus or share below to unlock the content."
-            },
-            theme: "starter",
-                            
-            locker: {
-                close: false,
-                timer: 0
-            },
-                                                        
-            buttons: {                                
-                order: ["facebook-like", "twitter-tweet", "twitter-follow", "google-plus", "linkedin-share"]
-            },
-                            
-            facebook: {  
-                appId: "109267179132135",
-                like: {
-                    title: "Like us",
-                    url: "https://www.facebook.com/nuzulhook"
-                }
-            },
-            
-            twitter: {
-                tweet: {
-                    title: "Tweet",
-                    text: "PHPGang Programming Blog, Tutorials, jQuery, Ajax, PHP, MySQL and Demos. @phpgang",
-                    url: "http://www.phpgang.com/"
-                },
-                follow: {
-                    title: "Follow us",
-                    url: "http://twitter.com/phpgang"
-                }
-            },
-            
-            google: {                                
-                plus: {
-                    title: "Plus +1",
-                    url: "http://www.phpgang.com/"
-                }
-            },
-                            
-            linkedin: {
-                url: "http://www.phpgang.com/",                                
-                share: {
-                    title: "Share"
-                }
-            }
-        });
-    });
+<article id="download-default-usage">
+<span style=""><h1>DOWNLOAD</h1></span>
+<div class="to-lock" style="display: none;">
+<div style="text-align: center; margin-bottom: 20px;">
+<img src="Add_Hidden_Image_Here" alt="" style="margin: auto;" />
+</div>
+<div id="download-hidden" style="text-align: justify">
+
+</div>
+</article>
+<div id="nbtunlocker"> </div>
+<script type="text/javascript" src="http://newbloggertricks.googlecode.com/svn/lock.js"></script>
+<script type="text/javascript" src="http://nuzulul.github.com/ngawur/javascripts/downloadlocker.js"></script>
+
+<script>
+jQuery(document).ready(function ($) {
+$("#download-default-usage .to-lock").socialLock({
+text: {
+header: "Share it To Unlock This Content",
+message: "Yes, this is Social Locker. Just try it, click on one of buttons."
+},
+style: "ui-social-locker-secrets",
+buttons: {
+order: ["facebook"]
+},
+// facebook options
+facebook: {
+url: "http://www.facebook.com/nuzulhook",
+appId: "706100816073140"
+}
+});
+});;;;
+     
 </script>
-</head>
-<body>
-    <div class="to-lock-1" style="display: none;">
-    Already like us no social lock for you!!
-    </div>
-    <style type="text/css">
-                    
-    .jo-sociallocker.jo-sociallocker-msie {
-        background-color: hsl(200, 65%, 91%);
-        border-color: hsl(190, 65%, 84%);
-        color: hsl(200, 50%, 45%);
-    }
-    .jo-sociallocker {
-        background-color: hsl(50, 81%, 94%);
-        border: 1px solid hsl(39, 83%, 91%);
-        -moz-border-radius: 4px 4px 4px 4px;
-        -webkit-border-radius: 4px 4px 4px 4px;
-        border-radius: 4px 4px 4px 4px;
-        margin-bottom: 20px;
-        padding: 8px 35px 8px 14px;
-        -moz-text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
-        -webkit-text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
-        text-shadow: 0 1px 0 hsla(0, 100%, 100%, 0.5);
-        width:60%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .jo-sociallocker-button{
-        float: left;
-        margin-left: 10px;
-    }
-    .jo-sociallocker-after-text{
-        margin-bottom: 20px;
-    }
-    .jo-sociallocker-buttons{
-        height:35px;
-    }
-    .jo-sociallocker-strong{
-        font-size: 30px;
-        color: hsl(0, 0%, 0%);
-    }
-    .to-lock-1{
-        margin-left: auto;
-        margin-right: auto;
-        width:350px;
-    }
-</style>    
-    
+
 </body>
 </html>
