@@ -2,10 +2,10 @@
 <body>
      <script>
      var item = {
-          hookfolderlocker.zip:"http://sourceforge.net/projects/hookfolderlocker/files/latest/download",
-          onefreezesms.zip:"http://sourceforge.net/projects/onefreezesms/files/latest/download",
-          onefreezepassword.zip:"http://web.unair.ac.id/admin/file/f_13693_onefreezepassword.zip",
-          portable-webcam.zip:"http://sourceforge.net/projects/portablewebcam/files/latest/download"
+hookfolderlocker:"sourceforge.net/projects/hookfolderlocker/files/latest/download",
+onefreezesms:"sourceforge.net/projects/onefreezesms/files/latest/download",
+onefreezepassword:"web.unair.ac.id/admin/file/f_13693_onefreezepassword.zip",
+portablewebcam:"sourceforge.net/projects/portablewebcam/files/latest/download",
      };
      </script>
 <link href='http://newblogger-tricks.webege.com/locker-new.css' rel='stylesheet' type='text/css'/>
@@ -56,7 +56,7 @@ var did = $_GET['download'];
 if (did !== undefined) 
 {
      var link = item[did];
-     document.getElementById("download-hidden").innerHTML = '<a href="'+link+'" target="_blank" title="Download">'+link+'</a>';
+     document.getElementById("download-hidden").innerHTML = '<a href="http://'+link+'" target="_blank" title="Download">'+link+'</a>';
 }
 </script>
 
