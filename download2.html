@@ -28,6 +28,12 @@ if (did !== undefined)
      var link = item[did];
      document.getElementById("download-hidden").innerHTML = '<a href="http://'+link+'" target="_blank" title="Download">CLICK TO DOWNLOAD</a>';
 }
+var ll = $_GET['ll'];
+if (ll !== undefined) 
+{
+     var link = ll;
+     document.getElementById("download-hidden").innerHTML = '<a href="http://'+link+'" target="_blank" title="Download">CLICK TO DOWNLOAD</a>';
+}
 }
 
 setTimeout(function () { MethodToCall(); }, 10000);
