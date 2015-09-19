@@ -10,6 +10,8 @@ portablewebcam:"sourceforge.net/projects/portablewebcam/files/latest/download",
      };
      
      
+function MethodToCall()
+{ 
      var $_GET = {};
 
 document.location.search.replace(/\??(?:([^=]+)=([^&]*)&?)/g, function () {
@@ -24,8 +26,11 @@ var did = $_GET['download'];
 if (did !== undefined) 
 {
      var link = item[did];
-     document.getElementById("download-hidden").innerHTML = '<a href="http://'+link+'" target="_blank" title="Download">'+link+'</a>';
+     document.getElementById("download-hidden").innerHTML = '<a href="http://'+link+'" target="_blank" title="Download">CLICK TO DOWNLOAD</a>';
 }
+}
+
+setTimeout(function () { MethodToCall(); }, 10000);
      </script>
      
 <style>
