@@ -1,5 +1,33 @@
 <html>
 <body>
+<div id="download-hidden"></div>
+     <script>
+     var item = {
+hookfolderlocker:"sourceforge.net/projects/hookfolderlocker/files/latest/download",
+onefreezesms:"sourceforge.net/projects/onefreezesms/files/latest/download",
+onefreezepassword:"web.unair.ac.id/admin/file/f_13693_onefreezepassword.zip",
+portablewebcam:"sourceforge.net/projects/portablewebcam/files/latest/download",
+     };
+     
+     
+     var $_GET = {};
+
+document.location.search.replace(/\??(?:([^=]+)=([^&]*)&?)/g, function () {
+    function decode(s) {
+        return decodeURIComponent(s.split("+").join(" "));
+    }
+
+    $_GET[decode(arguments[1])] = decode(arguments[2]);
+});
+
+var did = $_GET['download'];
+if (did !== undefined) 
+{
+     var link = item[did];
+     document.getElementById("download-hidden").innerHTML = '<a href="http://'+link+'" target="_blank" title="Download">'+link+'</a>';
+}
+     </script>
+     
 <style>
 #fblikepop{
 	display:none;
@@ -334,7 +362,7 @@ $(document).ready(function() {
 $('body').facebookTrafficPop( {
 timeout: 120,
 title: "Like My Facebook Page",
-message: 'LIKE MY FB PAGE TO CONTINUE',
+message: 'LIKE MY FB PAGE TO UNLOCK DOWNLOAD',
 url: "https://www.facebook.com/ustechwolrd",
 'opacity': 0.3, 
 'advancedClose':false, 
