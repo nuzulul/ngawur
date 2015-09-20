@@ -162,7 +162,7 @@ dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
 (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
 
 var url = document.URL;
-document.getElementById('nuzulhook_share').innerHTML = '<iframe src="//www.facebook.com/plugins/like.php?href='+url+'&width&layout=button_count&action=like&show_faces=false&share=true&height=35&appId=540320016076725" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:20px;width:190px;" allowTransparency="true"></iframe>';
+document.getElementById('nuzulhook_share').innerHTML = '<iframe src="//www.facebook.com/v2.4/plugins/like.php?href='+url+'&width&layout=button_count&action=like&show_faces=false&share=true&height=35&appId=540320016076725" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:20px;width:190px;" allowTransparency="true"></iframe>';
 
 
 }
