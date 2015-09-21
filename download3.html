@@ -39,7 +39,7 @@ var fl = $_GET['fl'];
 
 if (ll !== undefined) 
 {
-     var ll = Base64.decode(ll);;
+     var ll = Base64.decode(ll);alert(ll);
      document.getElementById("download-hidden").innerHTML = '<div class="dl-btn-container"> <div class="dl-file-icon rar archive application_x-rar"></div> <div class="promoDownloadName notranslate"> <div class="dl-btn-label"> '+tl+' </div> <div class="download_link"> <a href="http://'+ll+'" target="_blank">Download <span class="dlFileSize">'+sl+'</span></a> </div> </div> </div>';
 }
 }
