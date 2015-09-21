@@ -30,18 +30,18 @@ if (did !== undefined)
 }
 
 var ll = $_GET['ll'];
-var tl = $_GET['tl'];if (tl !== undefined){}else{tl = "";}
-var sl = $_GET['sl'];if (sl !== undefined){sl = "('+sl+')";}else{sl = "";}else
-var fl = $_GET['fl'];if (fl !== undefined){}else{fl = "";}
+var tl = $_GET['tl'];
+var sl = $_GET['sl'];
+var fl = $_GET['fl'];
 
 if (ll !== undefined) 
 {
      var link = ll;
-     document.getElementById("download-hidden").innerHTML = '<div class="dl-btn-container"> <div class="dl-file-icon rar archive application_x-rar"></div> <div class="promoDownloadName notranslate"> <div class="dl-btn-label"> '+tl+' </div> <div class="download_link"> <a href="http://'+tl+'" target="_blank">Download <span class="dlFileSize">'+sl+'</span></a> </div> </div> </div>';
+     document.getElementById("download-hidden").innerHTML = '<div class="dl-btn-container"> <div class="dl-file-icon rar archive application_x-rar"></div> <div class="promoDownloadName notranslate"> <div class="dl-btn-label"> '+tl+' </div> <div class="download_link"> <a href="http://'+ll+'" target="_blank">Download <span class="dlFileSize">'+sl+'</span></a> </div> </div> </div>';
 }
 }
 
-setTimeout(function () { MethodToCall(); }, 10000);
+setTimeout(function () { MethodToCall(); }, 1);
      
 </script>
 
