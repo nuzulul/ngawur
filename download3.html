@@ -31,7 +31,7 @@ if (did !== undefined)
 
 var ll = $_GET['ll'];
 var tl = $_GET['tl'];if (tl !== undefined){}else{var tl = "";}
-var sl = $_GET['sl'];if (sl !== undefined){}else{var sl = "";}
+var sl = $_GET['sl'];if (sl !== undefined){var sl = "("+sl+"")";}else{var sl = "";}
 var fl = $_GET['fl'];
 
 if (ll !== undefined) 
