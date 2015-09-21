@@ -7,6 +7,7 @@ var Base64={_keyStr:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456
 function create_url()
 {
 var link = document.forms['my_form'].elements["link"].value;
+var link = link.replace("https://","");
 var link = link.replace("http://","");
 var link = Base64.encode(link);
 var title = document.forms['my_form'].elements["title"].value;
