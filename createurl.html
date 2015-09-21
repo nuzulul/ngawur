@@ -20,6 +20,7 @@ document.getElementById("output").innerHTML = '<a href="'+myurl+'">'+myurl+'</a>
 function create_redirect()
 {
 var link = document.forms['my_form'].elements["link"].value;
+var link = link.replace("https://","");
 var link = link.replace("http://","");
 var link = Base64.encode(link);
 var title = document.forms['my_form'].elements["title"].value;
