@@ -15,6 +15,26 @@ var myurl = "http://nuzulul-fkp09.web.unair.ac.id/artikel_detail-24197.html?ll="
 document.getElementById("output").innerHTML = '<a href="'+myurl+'">'+myurl+'</a>';
 //document.forms['my_form'].elements.outputs.value= "asd";
 }
+
+function create_redirect()
+{
+var link = document.forms['my_form'].elements["link"].value;
+var link = link.replace("http://","");
+var link = Base64.encode(link);
+var title = document.forms['my_form'].elements["title"].value;
+var size = document.forms['my_form'].elements["size"].value;
+var myurl = "http://nuzulul-fkp09.web.unair.ac.id/artikel_detail-24197.html?lr="+link+"&tr="+title+"&sr="+size;
+document.getElementById("output").innerHTML = '<a href="'+myurl+'">'+myurl+'</a>';
+//document.forms['my_form'].elements.outputs.value= "asd";
+}
+
+function clear()
+{
+
+document.forms['my_form'].elements.link.value= "";
+document.forms['my_form'].elements.title.value= "";
+document.forms['my_form'].elements.size.value= "";
+}
 </script>
 
 <form name="my_form">
@@ -22,7 +42,7 @@ document.getElementById("output").innerHTML = '<a href="'+myurl+'">'+myurl+'</a>
 <tr><td>link</td><td><input type="text" name="link" size="50"></td></tr>
 <tr><td>title</td><td><input type="text" name="title" size="50"></td></tr>
 <tr><td>size</td><td><input type="text" name="size" size="50"></td></tr>
-<tr><td><input type="button" onClick="create_url()" value="Create"></td><td></td></tr>
+<tr><td></td><td><input type="button" onClick="create_url()" value="Create Download"><input type="button" onClick="create_redirect()" value="Create Redirect"><input type="button" onClick="clear()" value="Clear"></td></tr>
 </table>
 </form>
 <span id="output"></span>
