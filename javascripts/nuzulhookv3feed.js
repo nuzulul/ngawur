@@ -5,7 +5,8 @@ var url = window.location.href;
 if (url == 'http://nuzulul-fkp09.web.unair.ac.id/' || url == 'file:///C:/Users/Public/blog/nuzulhook%20v3/NUZULUL%20ZULKARNAIN%20HAQ%20Home.htm'){
     google.load("feeds", "1");
 
-    function initialize() {
+    function initialize2() {
+        
       var feed = new google.feeds.Feed("http://feeds.feedburner.com/hook-blog-modification");
       feed.load(function(result) {
         if (!result.error || result.error) {
@@ -89,7 +90,10 @@ if (url == 'http://nuzulul-fkp09.web.unair.ac.id/' || url == 'file:///C:/Users/P
       });
 
     }
-    google.setOnLoadCallback(initialize);
+    function initializetimer(){setTimeout(function () { initialize2(); }, 1);}
+    addLoadEvent(initializetimer);
+    //google.setOnLoadCallback(initialize);
+    
 }
 
 else if (url.indexOf("artikel_detail") !=-1) {
