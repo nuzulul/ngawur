@@ -2,7 +2,7 @@
 date = new Date; year = date.getFullYear(); month = date.getMonth(); months = new Array('Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'); d = date.getDate(); day = date.getDay(); days = new Array('Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'); h = date.getHours(); if(h<10) { h = "0"+h; } m = date.getMinutes(); if(m<10) { m = "0"+m; } s = date.getSeconds(); if(s<10) { s = "0"+s; } result = ''+days[day]+' '+d+' '+months[month]+' '+year; document.getElementById("waktuhome").innerHTML = result;
 ////feed///
 var url = window.location.href;
-if (url == 'http://nuzulul-fkp09.web.unair.ac.id/' || url == 'file:///C:/Users/Public/blog/nuzulhook%20v3/NUZULUL%20ZULKARNAIN%20HAQ%20Home.htm'){
+if (url == 'http://nuzulul-fkp09.web.unair.ac.id/' || url == 'file:///C:/Users/Public/blog/nuzulhook%20v3/NUZULUL%20ZULKARNAIN%20HAQ%20Home.htm' || url == 'http://nuzulul-fkp09.web.unair.ac.id/#popup'){
     google.load("feeds", "1");
 
     function initialize2() {
