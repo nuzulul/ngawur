@@ -3,6 +3,7 @@ body {background:#000 url("") repeat fixed center center;}
 #nuzulhook_header {clear: both;width: 910px;height: 300px;padding: 10px 30px;background: #fff;
 }
 #nuzulhook_footer {display:block;width:auto;padding:5px 0 0 0;background:#048dc6;color:#fff;}
+#nuzulhook_footer a {color:#F6F7F8}
 #menupopup1{display:block;width:auto;height:30px;padding:5px 0 0 0}#menupopup1,#menupopup1 ul li:hover ul.child li a{background:#048dc6}#menupopup1 ul,#menupopup1 ul li{margin:0}#menupopup1 ul li{list-style-type:none;float:left}#menupopup1 ul li a{font:12px arial;text-decoration:none;margin:0 10px 0 0;color:#fff}#menupopup1 ul li ul.child{display:none}#menupopup1 ul li:hover ul.child,#menupopup1 ul li:hover ul.child li a{display:block}#menupopup1 ul li:hover ul.child{position:absolute;z-index:2;text-align:left}#menupopup1 ul li:hover ul.child li a{padding:10px 20px 10px 20px;margin:0 0 0 -20px}#menupopup1 ul li:hover ul.child li{float:none;margin:0 0 0 -30px}#menupopup1 ul li a:hover{text-decoration:underline}
 
 #nuzulhook_site_title {margin:20px 0 20px 0;}
