@@ -1,0 +1,19 @@
+body {background:#000 url("") repeat fixed center center;}
+#nuzulhook_body_wrapper{width:970px;margin:20px auto;background:#E9EAED;}
+#nuzulhook_header {clear: both;width: 910px;height: 300px;padding: 10px 30px;background: #fff;
+}
+#nuzulhook_footer {display:block;width:auto;padding:5px 0 0 0;background:#048dc6;color:#fff;}
+#menupopup1{display:block;width:auto;height:30px;padding:5px 0 0 0}#menupopup1,#menupopup1 ul li:hover ul.child li a{background:#048dc6}#menupopup1 ul,#menupopup1 ul li{margin:0}#menupopup1 ul li{list-style-type:none;float:left}#menupopup1 ul li a{font:12px arial;text-decoration:none;margin:0 10px 0 0;color:#fff}#menupopup1 ul li ul.child{display:none}#menupopup1 ul li:hover ul.child,#menupopup1 ul li:hover ul.child li a{display:block}#menupopup1 ul li:hover ul.child{position:absolute;z-index:2;text-align:left}#menupopup1 ul li:hover ul.child li a{padding:10px 20px 10px 20px;margin:0 0 0 -20px}#menupopup1 ul li:hover ul.child li{float:none;margin:0 0 0 -30px}#menupopup1 ul li a:hover{text-decoration:underline}
+
+#nuzulhook_site_title {margin:20px 0 20px 0;}
+#site_title h1{line-height:48px;font-size:48px;font: 'Trebuchet MS', Arial, Sans-serif;padding: 0px 0 0 0px;}#templatemo_header  #site_title h2 {margin-top:10px;font: bolder 4.1em 'Trebuchet MS', Arial, Sans-serif;padding: 0px 0 0 px;}
+
+.templatemo_box { border:1px solid #D3D6DB;margin-bottom: 10px; background:#fff ; }
+.templatemo_box .body { padding: 5px 15px; }
+.templatemo_box h2 { position: relative; height: 25px; margin: 0px; padding: 8px 15px; font-size: 14px; color: #4E5665; font-weight: bold; background:#F6F7F8  }
+.templatemo_box h2 span { position: absolute; width: 10px; height: 35px; top: 0px; left: 0px; background: url("") repeat scroll 0% 0% transparent; }
+.templatemo_box .box_bottom { position: relative; height: 12px; background: url("") repeat scroll right top transparent; }
+.templatemo_box .box_bottom span { position: absolute; width: 10px; height: 12px; top: 0px; left: 0px; background: url("") repeat scroll 0% 0% transparent; }
+.more a{background:#E9EAED}
+.side_menu, .side_menux li {list-style: disc;padding: 0px;margin: 0 0 0 0;padding:5px 5px;}
+.side_menu li a, .side_menux li  {background:none;padding:0px 0px;}
