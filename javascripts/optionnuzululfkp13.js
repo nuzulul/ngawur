@@ -3,14 +3,6 @@ document.getElementsByClassName('side_menu')[0].outerHTML = '<ul class="side_men
 document.getElementById('templatemo_content').innerHTML = elegan+document.getElementById('templatemo_content').innerHTML;
 
 
-function fbpop()
-{
-document.getElementById("fbpop").innerHTML = '<div id="fbpopdisplay" style="display:none"><div class="popup-wrapper" id="popup"><div class="popup-container"><div style="height:0px;position:fixed;top:50px;color:#fff;"><h3>Welcome ! Please Suport Me :)</h3></div> <iframe src="http://nuzulul.github.io/ngawur/pagenuzulhook.html" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:340px; height:290px;" allowTransparency="true"></iframe> <a class="popup-close" href="#popup">X</a> </div> </div></div>';
-}
 
-addLoadEvent(fbpop);
-function fbpopdisplay(){document.getElementById('fbpopdisplay').style.display='block';}
-function fbpoptime() {setTimeout(function () { fbpopdisplay(); }, 8000);}
-addLoadEvent(fbpoptime);
 
 
