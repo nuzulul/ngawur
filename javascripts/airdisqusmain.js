@@ -14,7 +14,7 @@ function addLoadEvent(func) {
 
 function loadscript()
 {
-document.getElementsByName('form3')[0].innerHTML = '<div id="disqus_thread"></div><br><a title="Pasang Disqus Comment di Blog Unair" target="_blank" href="http://goo.gl/H3MU3E">Pasang Disqus Comment di Blog Unair</a>';
+document.getElementsByName('form3')[0].innerHTML = '<div id="disqus_thread"></div><br><a title="Pasang Disqus Comment di Blog Unair" target="_blank" href="http://goo.gl/wDwsV4">Powered by AirDisqus - Disqus Comment System for Blog Unair</a>';
 
     /* * * CONFIGURATION VARIABLES * * */
     //var disqus_shortname = 'blogunair';
