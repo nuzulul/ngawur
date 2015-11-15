@@ -39,7 +39,7 @@ function RunSlideShow(pictureID,backgroundID,imageFiles,displaySecs)
 
 function loadScript()
 {
-var footer = '<div id="nuzulhook_footer"><center>'+footertext+'</br>Powered by Universitas Airlangga</center></div>';
+var footer = '<div id="nuzulhook_footer"><center>'+footertext+'</br>Powered by Universitas Airlangga. Theme by <a href="http://goo.gl/uyiYiR" target="_blank">Elegan Theme</a></center></div>';
 var medsos = '<div style="width:250px;height:0px;left:700px;top:-225px;position:relative;"> <a href="'+facebooklink+'" target="_blank"><img src="http://web.unair.ac.id/admin/file/f_13693_logo-fb.jpg" width="50px"></a> <a href="'+twitterlink+'" target="_blank"><img src="http://web.unair.ac.id/admin/file/f_13693_logo-twitter.jpg" width="50px"></a> <a href="'+youtubelink+'" target="_blank"><img src="http://web.unair.ac.id/admin/file/f_13693_youtube_logo.png" width="50px"></a> <a href="'+instagramlink+'" target="_blank"><img src="http://web.unair.ac.id/admin/file/f_13693_instagram-icon.jpg" width="50px"></a> </div>';
 var menu = '<div id="menupopup1"> 	<ul class="parent"> 		<li><a href="index.html">Home</a></li> 		<li><a href="profil.html">Profil</a></li> 		<li><a href="http://web.unair.ac.id/login.html">Login</a></li>		 	</ul> </div>';
 var slider = '<div id="GambarBackground" style="background-image: url(http://web.unair.ac.id/admin/file/f_13693_rektorat-unair-nuzulul-zulkarnain-haq.jpg);overflow:hidden;background:#93BDF5;width:910px;height:150px;left:auto;right:auto;"><center><a href="index.html"><img id="GambarDasar" style="opacity: 0;" src="http://web.unair.ac.id/admin/file/f_13693_rektorat-unair-nuzulul-zulkarnain-haq.jpg" width="910px"></a></center></div>';
