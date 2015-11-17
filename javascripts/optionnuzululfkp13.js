@@ -5,9 +5,10 @@ document.getElementsByClassName('side_menu')[1].outerHTML = '<ul class="side_men
 
 var rightsidebar = document.getElementById('templatemo_right_sidebar').innerHTML;
 var contentrightsidebar = rightsidebar.getElementsByClassName('templatemo_box')[0].outerHTML+rightsidebar.getElementsByClassName('templatemo_box')[1].outerHTML+rightsidebar.getElementsByClassName('templatemo_box')[2].outerHTML;
-document.getElementById('templatemo_right_sidebar').innerHTML = contentrightsidebar;
+
 
 function content() {
+  document.getElementById('templatemo_right_sidebar').innerHTML = contentrightsidebar;
   var url = window.location.href;
   if (url == 'http://nuzulul-fkp13.web.unair.ac.id/' || url == 'http://nuzulul-fkp13.web.unair.ac.id/index.html' || url == 'http://nuzulul-fkp13.web.unair.ac.id' || url == 'nuzulul-fkp13.web.unair.ac.id')
   {
