@@ -12,11 +12,17 @@ function content() {
   {
   document.getElementById('templatemo_content').innerHTML = document.getElementById('nuzulul_content').innerHTML;
   }
-  document.getElementById('templatemo_right_sidebar').innerHTML = document.getElementById('nuzulul_right_sidebar').innerHTML; 
 }
 
 function contenttime() {setTimeout(function () { content(); }, 100);}
 addLoadEvent(contenttime);
+
+function sidebar() {
+  document.getElementById('templatemo_right_sidebar').innerHTML = document.getElementById('nuzulul_right_sidebar').innerHTML; 
+}
+
+function sidebartime() {setTimeout(function () { sidebar(); }, 100);}
+addLoadEvent(sidebartime);
 
 function fbpop()
 {
