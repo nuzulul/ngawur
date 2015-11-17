@@ -3,6 +3,9 @@ document.getElementsByClassName('side_menu')[0].outerHTML = '<ul class="side_men
 
 document.getElementsByClassName('side_menu')[1].outerHTML = '<ul class="side_menu"><li><a href="artikel_detail-149250-Download-Portable Webcam untuk Membuka Webcam dengan Cepat.html">Portable Webcam untuk Membuka Webcam dengan Cepat</a></li><li><a href="artikel_detail-149249-Download-Portable Folder Locker untuk mengunci Folder.html">Portable Folder Locker untuk mengunci Folder</a></li><li><a href="artikel_detail-149230-Tutorial-Elegan Theme  Theme Gratis untuk blog Unair.html">Elegan Theme - Theme Gratis untuk blog Unair</a></li><li><a href="artikel_detail-149229-Tutorial-Cara Memasang AirDisqus (Disqus untuk Blog Unair).html">Cara Memasang AirDisqus (Disqus untuk Blog Unair)</a></li><li><a href="artikel_detail-149228-Tutorial-Cara Memasang Widget Blogger Unair.html">Cara Memasang Widget Blogger Unair</a></li>					</ul>';
 
+var rightsidebar = document.getElementById('templatemo_right_sidebar').innerHTML;
+var contentrightsidebar = rightsidebar.getElementsByClassName('templatemo_box')[0].outerHTML+rightsidebar.getElementsByClassName('templatemo_box')[1].outerHTML+rightsidebar.getElementsByClassName('templatemo_box')[2].outerHTML;
+document.getElementById('templatemo_right_sidebar').innerHTML = contentrightsidebar;
 
 function content() {
   var url = window.location.href;
