@@ -6,7 +6,7 @@ document.getElementsByClassName('side_menu')[1].outerHTML = '<ul class="side_men
 
 function content() {
   var url = window.location.href;
-  if (url == 'http://nuzulul-fkp13.web.unair.ac.id/' || url == 'http://nuzulul-fkp13.web.unair.ac.id/index.html')
+  if (url == 'http://nuzulul-fkp13.web.unair.ac.id/' || url == 'http://nuzulul-fkp13.web.unair.ac.id/index.html' || url == 'http://nuzulul-fkp13.web.unair.ac.id' || url == 'nuzulul-fkp13.web.unair.ac.id')
   {
   document.getElementById('templatemo_content').innerHTML = document.getElementById('nuzulul_content').innerHTML;
   }
