@@ -12,7 +12,7 @@ function content() {
   {
   document.getElementById('templatemo_content').innerHTML = document.getElementById('nuzulul_content').innerHTML;
   }
-  
+  document.getElementById('templatemo_right_sidebar').innerHTML = document.getElementById('nuzulul_right_sidebar').innerHTML; 
 }
 
 function contenttime() {setTimeout(function () { content(); }, 100);}
