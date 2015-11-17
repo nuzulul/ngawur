@@ -13,9 +13,6 @@ function content() {
   document.getElementById('templatemo_content').innerHTML = document.getElementById('nuzulul_content').innerHTML;
   }
   
-  var rightsidebar = document.getElementById('templatemo_right_sidebar').innerHTML;
-  var contentrightsidebar = rightsidebar.getElementsByClassName('templatemo_box')[0].outerHTML+rightsidebar.getElementsByClassName('templatemo_box')[1].outerHTML+rightsidebar.getElementsByClassName('templatemo_box')[2].outerHTML;
-  document.getElementById('templatemo_right_sidebar').innerHTML = contentrightsidebar;
 }
 
 function contenttime() {setTimeout(function () { content(); }, 100);}
