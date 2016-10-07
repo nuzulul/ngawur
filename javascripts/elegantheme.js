@@ -1,5 +1,5 @@
 //Script : Elegan Theme for Blog Unair
-//Author : Nuzulul Zulkarnain (@nuzululkarnain)
+//Author : Nuzulul Zulkarnain Haq (@bangnuzul)
 //Created : 15 November 2015
 //Homepage : http://goo.gl/uyiYiR
 
