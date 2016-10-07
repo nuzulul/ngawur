@@ -1,5 +1,5 @@
 //Script : AirDisqus - Disqus Comment System for Blog Unair
-//Author : Nuzulul Zulkarnain (@nuzululkarnain)
+//Author : Nuzulul Zulkarnain Haq (@bangnuzul)
 //Created : 16 November 2015
 //Homepage : http://goo.gl/wDwsV4
 
