@@ -97,3 +97,4 @@ function writeIslamicDate(adjustment) {
 	+ iDate[5] + " " + iMonthNames[iDate[6]] + " " + iDate[7] + " AH";
 	return outputIslamicDate;
 }
+document.write(writeIslamicDate(hijriplus));
