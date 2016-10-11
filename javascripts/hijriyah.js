@@ -88,13 +88,13 @@ function kuwaiticalendar(adjust){
 	return myRes;
 }
 function writeIslamicDate(adjustment) {
-	var wdNames = new Array("Ahad","Ithnin","Thulatha","Arbaa","Khams","Jumuah","Sabt");
-	var iMonthNames = new Array("Muharram","Safar","Rabi'ul Awwal","Rabi'ul Akhir",
-	"Jumadal Ula","Jumadal Akhira","Rajab","Sha'ban",
-	"Ramadan","Shawwal","Dhul Qa'ada","Dhul Hijja");
+	var wdNames = new Array("Ahad","Itsnayn","Tsalaatsa","Arbaa","Khamsah","Jumuah","Sabt");
+	var iMonthNames = new Array("Muharram","Safar","Rabi'ul Awal","Rabi'ul Akhir",
+	"Jumadil Awal","Jumadil Akhir","Rajab","Sya'ban",
+	"Ramadhan","Syawal","Dzulkaidah","Dzulhijjah");
 	var iDate = kuwaiticalendar(adjustment);
 	var outputIslamicDate = wdNames[iDate[4]] + ", " 
-	+ iDate[5] + " " + iMonthNames[iDate[6]] + " " + iDate[7] + " AH";
+	+ iDate[5] + " " + iMonthNames[iDate[6]] + " " + iDate[7] + " H";
 	return outputIslamicDate;
 }
 document.write(writeIslamicDate(hijriplus));
