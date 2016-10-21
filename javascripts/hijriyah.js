@@ -97,4 +97,4 @@ function writeIslamicDate(adjustment) {
 	+ iDate[5] + " " + iMonthNames[iDate[6]] + " " + iDate[7] + " H";
 	return outputIslamicDate;
 }
-document.write(writeIslamicDate(0));
+document.write(writeIslamicDate());
