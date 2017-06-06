@@ -24,7 +24,7 @@ if (url == 'http://nuzulul-fkp09.web.unair.ac.id/' || url == 'file:///C:/Users/P
       feed.load(function(result) {
         if (!result.error) {
           var container = document.createElement("div");
-          for (var i = 0; i < result.feed.entries.length; i++) {
+          for (var i = 0; i < 5; i++) {
             var entry = result.feed.entries[i];
             var div2 = document.createElement("li");
             div2.innerHTML = '<a href="'+entry.link+'">'+entry.title+'</a>';
@@ -37,7 +37,7 @@ if (url == 'http://nuzulul-fkp09.web.unair.ac.id/' || url == 'file:///C:/Users/P
       feed.load(function(result) {
         if (!result.error) {
           var container = document.createElement("div");
-          for (var i = 0; i < result.feed.entries.length; i++) {
+          for (var i = 0; i < 5; i++) {
             var entry = result.feed.entries[i];
             var div2 = document.createElement("li");
             div2.innerHTML = '<a href="'+entry.link+'">'+entry.title+'</a>';
@@ -51,7 +51,7 @@ if (url == 'http://nuzulul-fkp09.web.unair.ac.id/' || url == 'file:///C:/Users/P
       feed.load(function(result) {
         if (!result.error) {
           var container = document.createElement("div");
-          for (var i = 0; i < result.feed.entries.length; i++) {
+          for (var i = 0; i < 5; i++) {
             var entry = result.feed.entries[i];
             var div2 = document.createElement("li");
             div2.innerHTML = '<a href="'+entry.link+'">'+entry.title+'</a>';
@@ -65,7 +65,7 @@ if (url == 'http://nuzulul-fkp09.web.unair.ac.id/' || url == 'file:///C:/Users/P
       feed.load(function(result) {
         if (!result.error) {
           var container = document.createElement("div");
-          for (var i = 0; i < result.feed.entries.length; i++) {
+          for (var i = 0; i < 5; i++) {
             var entry = result.feed.entries[i];
             var div2 = document.createElement("li");
             div2.innerHTML = '<a href="'+entry.link+'">'+entry.title+'</a>';
@@ -79,7 +79,7 @@ if (url == 'http://nuzulul-fkp09.web.unair.ac.id/' || url == 'file:///C:/Users/P
       feed.load(function(result) {
         if (!result.error) {
           var container = document.createElement("div");
-          for (var i = 0; i < result.feed.entries.length; i++) {
+          for (var i = 0; i < 5; i++) {
             var entry = result.feed.entries[i];
             var div2 = document.createElement("li");
             div2.innerHTML = '<a href="'+entry.link+'">'+entry.content+'</a>';
@@ -104,7 +104,7 @@ else if (url.indexOf("artikel_detail") !=-1) {
       feed.load(function(result) {
         if (!result.error || result.error) {
           var container = document.createElement("div");
-          for (var i = 0; i < result.feed.entries.length; i++) {
+          for (var i = 0; i < 5; i++) {
             var entry = result.feed.entries[i];
             var div2 = document.createElement("li");
             div2.innerHTML = '<a href="'+entry.link+'">'+entry.title+'</a>';
