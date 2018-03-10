@@ -24,7 +24,7 @@ if (url == 'http://nuzulul-fkp09.web.unair.ac.id/' || url == 'file:///C:/Users/P
       feed.load(function(result) {
         if (!result.error) {
           var container = document.createElement("div");
-          for (var i = 0; i < 5; i++) {
+          for (var i = 0; i < 2; i++) {
             var entry = result.feed.entries[i];
             var div2 = document.createElement("li");
             div2.innerHTML = '<a href="'+entry.link+'">'+entry.title+'</a>';
@@ -37,7 +37,7 @@ if (url == 'http://nuzulul-fkp09.web.unair.ac.id/' || url == 'file:///C:/Users/P
       feed.load(function(result) {
         if (!result.error) {
           var container = document.createElement("div");
-          for (var i = 0; i < 5; i++) {
+          for (var i = 0; i < 2; i++) {
             var entry = result.feed.entries[i];
             var div2 = document.createElement("li");
             div2.innerHTML = '<a href="'+entry.link+'">'+entry.title+'</a>';
@@ -51,7 +51,7 @@ if (url == 'http://nuzulul-fkp09.web.unair.ac.id/' || url == 'file:///C:/Users/P
       feed.load(function(result) {
         if (!result.error) {
           var container = document.createElement("div");
-          for (var i = 0; i < 5; i++) {
+          for (var i = 0; i < 2; i++) {
             var entry = result.feed.entries[i];
             var div2 = document.createElement("li");
             div2.innerHTML = '<a href="'+entry.link+'">'+entry.title+'</a>';
@@ -65,7 +65,7 @@ if (url == 'http://nuzulul-fkp09.web.unair.ac.id/' || url == 'file:///C:/Users/P
       feed.load(function(result) {
         if (!result.error) {
           var container = document.createElement("div");
-          for (var i = 0; i < 5; i++) {
+          for (var i = 0; i < 2; i++) {
             var entry = result.feed.entries[i];
             var div2 = document.createElement("li");
             div2.innerHTML = '<a href="'+entry.link+'">'+entry.title+'</a>';
@@ -79,7 +79,7 @@ if (url == 'http://nuzulul-fkp09.web.unair.ac.id/' || url == 'file:///C:/Users/P
       feed.load(function(result) {
         if (!result.error) {
           var container = document.createElement("div");
-          for (var i = 0; i < 5; i++) {
+          for (var i = 0; i < 10; i++) {
             var entry = result.feed.entries[i];
             var div2 = document.createElement("li");
             div2.innerHTML = '<a href="'+entry.link+'">'+entry.content+'</a>';
