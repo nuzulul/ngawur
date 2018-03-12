@@ -56,11 +56,11 @@ var n = d.getFullYear();
 var foot = 'Copyright (c) 2011-'+n+' <a href="http://nuzulul-fkp09.web.unair.ac.id/">Nuzulul Zulkarnain Haq</a>. All rights reserved.</br>Seluruh artikel di nuzulul-fkp09.web.unair.ac.id dapat anda perbanyak, cetak, modifikasi dan distribusikan secara bebas asal tetap mencantumkan nama penulis dan URL lengkap artikel.</br>Powered by <a href="http://unair.ac.id" target="_blank">Universitas Airlangga</a>';
 document.getElementById('templatmeo_wrapper').outerHTML= '<div id="nuzulhook_wrapper"><div id="nuzulhook_header_wrapper"></div><div id="nuzulhook_header"><div id="nuzulhook_header_top_all"></div><div id="nuzulhook_header_top"><img id="nuzulhook_header_top_image" style="opacity: 0;" src="https://sites.google.com/site/nuzulz/download/headerkampuscunair.jpg" width="100px"><div id="nuzulhook_header_top_trans"></div><div id="nuzulhook_header_top_line"></div><div id="nuzulhook_header_top_search"></div></div><div id="nuzulhook_header_bottom"></div><div id="nuzulhook_header_poto"><img src="https://sites.google.com/site/nuzulz/download/image-profil-nuzulul-2.jpg" width="100%"><div id="nuzulhook_header_poto_border"></div></div><div id="nuzulhook_header_title"><h2>Nuzulul Official Blog</h2><h3>A Hybrid Nurse & Blogger Universitas Airlangga</h3><div id="liketwitteratas"><a href="http://twitter.com/bangnuzul/">twitter</a></div></div><div id="nuzulhook_header_menu"> ' + menupopup1 + medsos + '</div> </div><div id="nuzulhook_content_wrapper"><div id="nuzulhook_content_top_all"></div>' + content + '</div><div id="nuzulhook_footer_top_all"></div><div id="nuzulhook_footer"> '+ foot +'</div></div>';
 document.getElementById('templatemo_footer_wrapper').outerHTML='<div id="nuzulhook_footer_wrapper"></div>';
-document.getElementById('liketwitteratas').innerHTML = "<div id=\"liketwitteratas\"><iframe src=\"http://nuzulul.github.com/ngawur/liketwitter.html\" scrolling=\"no\" frameborder=\"0\" style=\"border:none; overflow:hidden; width:150px; height:25px;\" allowTransparency=\"true\"><\/iframe><\/div>";
-document.getElementById('likefbatas').innerHTML = "<div id=\"likefbatas\"><iframe src=\"http://nuzulul.github.io/ngawur/pagenuzulhook.html\" scrolling=\"no\" frameborder=\"0\" style=\"border:none; overflow:hidden; width:340px; height:290px;\" allowTransparency=\"true\"><\/iframe><\/div>";
-document.getElementById('tweets').innerHTML = "<iframe src=\"http://nuzulul.github.com/ngawur/tweetszul.html\" scrolling=\"no\" frameborder=\"0\" style=\"border:none; overflow:hidden; width:340px; height:450px;\" allowTransparency=\"true\"><\/iframe><style>#tweets {height:250px;overflow:hidden;} #tweets:hover {height:100%;}</style>";
-//document.getElementById('livechat').innerHTML = "<iframe id='livechatiframe' src=\"http://nuzulul.github.com/ngawur/nuzulhooklivechat.html\" scrolling=\"yes\" frameborder=\"0\" style=\"border:none; overflow:scroll; width:340px; height:450px;\" allowTransparency=\"true\"><\/iframe><style>#livechat {height:290px;overflow:hidden;} #livechat:hover {height:100%;}</style>";
-document.getElementById('nuzulhook_header_top_search').innerHTML = '<div id="search_form"><div id="gsearch"><form action="http://www.google.com/cse" id="cse-search-box" target="_blank"><div> <input type="hidden" name="cx" value="002432522631165541499:okf_w9ptqto" /> <input type="hidden" name="ie" value="UTF-8" /> <input type="text" name="q" size="30" /> <input type="submit" name="sa" value="Search" /></div></form> </div></div> ';
+document.getElementById('liketwitteratas').innerHTML = "<div id=\"liketwitteratas\"><iframe src=\"https://nuzulul.github.io/ngawur/liketwitter.html\" scrolling=\"no\" frameborder=\"0\" style=\"border:none; overflow:hidden; width:150px; height:25px;\" allowTransparency=\"true\"><\/iframe><\/div>";
+document.getElementById('likefbatas').innerHTML = "<div id=\"likefbatas\"><iframe src=\"https://nuzulul.github.io/ngawur/pagenuzulhook.html\" scrolling=\"no\" frameborder=\"0\" style=\"border:none; overflow:hidden; width:340px; height:290px;\" allowTransparency=\"true\"><\/iframe><\/div>";
+document.getElementById('tweets').innerHTML = "<iframe src=\"https://nuzulul.github.io/ngawur/tweetszul.html\" scrolling=\"no\" frameborder=\"0\" style=\"border:none; overflow:hidden; width:340px; height:450px;\" allowTransparency=\"true\"><\/iframe><style>#tweets {height:250px;overflow:hidden;} #tweets:hover {height:100%;}</style>";
+//document.getElementById('livechat').innerHTML = "<iframe id='livechatiframe' src=\"https://nuzulul.github.io/ngawur/nuzulhooklivechat.html\" scrolling=\"yes\" frameborder=\"0\" style=\"border:none; overflow:scroll; width:340px; height:450px;\" allowTransparency=\"true\"><\/iframe><style>#livechat {height:290px;overflow:hidden;} #livechat:hover {height:100%;}</style>";
+document.getElementById('nuzulhook_header_top_search').innerHTML = '<div id="search_form"><div id="gsearch"><form action="https://www.google.com/cse" id="cse-search-box" target="_blank"><div> <input type="hidden" name="cx" value="002432522631165541499:okf_w9ptqto" /> <input type="hidden" name="ie" value="UTF-8" /> <input type="text" name="q" size="30" /> <input type="submit" name="sa" value="Search" /></div></form> </div></div> ';
 document.getElementById('nuzulhook_nav').innerHTML = "<div id=\"pages\"><div class=\"navigation\"><a class=\"page-numbers\" href=\"index.html?hal=1\">1<\/a><a class=\"page-numbers\" href=\"index.html?hal=2\">2<\/a><a class=\"page-numbers\" href=\"index.html?hal=3\">3<\/a><a class=\"page-numbers\" href=\"index.html?hal=4\">4<\/a><a class=\"page-numbers\" href=\"index.html?hal=5\">5<\/a><a class=\"page-numbers\" href=\"index.html?hal=6\">6<\/a><a class=\"page-numbers\" href=\"index.html?hal=7\">7<\/a><a class=\"page-numbers\" href=\"index.html?hal=8\">8<\/a><a class=\"page-numbers\" href=\"index.html?hal=9\">9<\/a><a class=\"page-numbers\" href=\"index.html?hal=10\">10<\/a><a class=\"page-numbers\" href=\"index.html?hal=11\">11<\/a><a class=\"page-numbers\" href=\"index.html?hal=12\">12<\/a><a class=\"page-numbers\" href=\"index.html?hal=13\">13<\/a><\/div><\/div>";
 //document.getElementById('histats_count').innerHTML = document.getElementById('nuzulhook_stats').innerHTML;
 
@@ -71,23 +71,23 @@ tag.src = "https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js";
 document.getElementsByTagName("body")[0].appendChild(tag);
 
 var tag = document.createElement("script");
-tag.src = "http://nuzulul.github.com/ngawur/javascripts/jquery.lightbox-0.5.js";
+tag.src = "https://nuzulul.github.io/ngawur/javascripts/jquery.lightbox-0.5.js";
 document.getElementsByTagName("body")[0].appendChild(tag);
 
 var tag = document.createElement("script");
-tag.src = "http://connect.facebook.net/en_US/all.js";
+tag.src = "https://connect.facebook.net/en_US/all.js";
 document.getElementsByTagName("body")[0].appendChild(tag);
 
 var tag = document.createElement("script");
-tag.src = "http://nuzulul.github.com/ngawur/javascripts/fb_gallery.js";
+tag.src = "https://nuzulul.github.io/ngawur/javascripts/fb_gallery.js";
 document.getElementsByTagName("body")[0].appendChild(tag);
 
 var tag = document.createElement("script");
-tag.src = "http://nuzulul.github.com/ngawur/javascripts/galeri.js";
+tag.src = "https://nuzulul.github.io/ngawur/javascripts/galeri.js";
 document.getElementsByTagName("body")[0].appendChild(tag);
 
 var tag = document.createElement("script");
-tag.src = "http://www.google.com/cse/brand?form=cse-search-box&lang=id";
+tag.src = "https://www.google.com/cse/brand?form=cse-search-box&lang=id";
 document.getElementsByTagName("body")[0].appendChild(tag);
 
 var mytitle = document.title;
@@ -158,7 +158,7 @@ document.getElementById("nuzulhook_footer_wrapper").innerHTML= document.getEleme
 var disqus_shortname = 'nuzulul';
 var disqus_title = mytitle;
 var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
 (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
 
 var url = document.URL;
