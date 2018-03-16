@@ -14,7 +14,7 @@ a:active, a:hover { color: rgb(0, 153, 0); text-decoration: underline; }
 #nuzulhook_header_title{position:relative;top:-280px;left:200px;color:#fff;}
 #nuzulhook_header_title h2 {font-family:"Trebuchet MS", Arial, Sans-serif;font-size:250%;}
 #nuzulhook_header_title h2 a{color:#fff}
-#liketwitteratas {position:relative;top:-18px;left:170px;height:0px;}
+#liketwitteratas {position:relative;top:-20px;left:170px;height:0px;}
 #nuzulhook_header_menu{position:relative;top:-250px;left:200px;color:#000;}
 #nuzulhook_content_wrapper { clear: both; padding: 0px;margin-top:10px; }
 #nuzulhook_sidebar { float: left; margin-right: 10px; width: 340px; }
