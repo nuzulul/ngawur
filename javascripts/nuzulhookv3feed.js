@@ -98,13 +98,29 @@ if (url == 'http://nuzulul-fkp09.web.unair.ac.id/' || url == 'file:///C:/Users/P
     //google.setOnLoadCallback(initialize);
 }
 
-else if (url.indexOf("artikel_detail") !=-1) {
+else if (url.indexOf("artikel_detail") !=-1) 
+{
     google.load("feeds", "1");
 
     function initialize() {
-      var feed = new google.feeds.Feed("http://feeds.feedburner.com/hook-blog-modification");
+      
+      var feed = new google.feeds.Feed("http://feeds.feedburner.com/hook-disqus");
       feed.load(function(result) {
-        if (!result.error || result.error) {
+        if (!result.error) {
+          var container = document.createElement("div");
+          for (var i = 0; i < 10; i++) {
+            var entry = result.feed.entries[i];
+            var div2 = document.createElement("li");
+            div2.innerHTML = '<a href="'+entry.link+'">'+entry.content+'</a>';
+            container.appendChild(div2);
+          }
+          document.getElementById("nuzulhook_sidebar_bottom").innerHTML = document.getElementById("nuzulhook_sidebar_bottom").innerHTML+'<div class="nuzulhook_box  adddata1">	 <a href="http://nuzulul.disqus.com/latest.rss"><h2><span></span>Komentar Terbaru</h2></a> <div class="body"><div class="news_box"> <ul class="side_menu">'+container.innerHTML+'</ul> <div class="cleaner"></div></div></div></div>';
+        }
+      });
+      
+      var feed = new google.feeds.Feed("http://feeds.feedburner.com/hook-latestpost");
+      feed.load(function(result) {
+        if (!result.error) {
           var container = document.createElement("div");
           for (var i = 0; i < 5; i++) {
             var entry = result.feed.entries[i];
@@ -112,34 +128,13 @@ else if (url.indexOf("artikel_detail") !=-1) {
             div2.innerHTML = '<a href="'+entry.link+'">'+entry.title+'</a>';
             container.appendChild(div2);
           }
-          
-          var ntitle = document.title;
-          var link = document.createElement('a');
-          link.setAttribute('href', 'https://twitter.com/share');
-          link.setAttribute('class', 'twitter-share-button');
-          link.setAttribute('data-count', 'horizontal');
-          link.setAttribute('data-text', ntitle);
-          tweetdiv  =  document.getElementById('nuzulhook_share');
-          tweetdiv.appendChild(link);
-          twttr.widgets.load();          
-          
+          document.getElementById("nuzulhook_sidebar_bottom").innerHTML = document.getElementById("nuzulhook_sidebar_bottom").innerHTML+'<div class="nuzulhook_box  adddata1">	 <a href="http://nuzulul-fkp09.web.unair.ac.id/index.html?hal=1"><h2><span></span>Artikel Terbaru</h2></a> <div class="body"><div class="news_box"> <ul class="side_menu">'+container.innerHTML+'</ul> <div class="cleaner"></div></div></div></div>';
         }
       });
-      }
-      google.setOnLoadCallback(initialize);
       
-      window.twttr = (function(d, s, id) {
-        var t, js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s);
-        js.id = id;
-        js.src = "https://platform.twitter.com/widgets.js";
-        fjs.parentNode.insertBefore(js, fjs);
-        return window.twttr || (t = {
-            _e: [],
-            ready: function(f) {
-                t._e.push(f)
-            }
-        });
-    }(document, "script", "twitter-wjs"));
+      }
+    function initializetimer(){setTimeout(function () { initialize2(); }, 1);}
+    addLoadEvent(initializetimer);
+      //google.setOnLoadCallback(initialize);
+      
 }
