@@ -133,7 +133,7 @@ else if (url.indexOf("artikel_detail") !=-1)
       });
       
       }
-    function initializetimer(){setTimeout(function () { initialize2(); }, 1);}
+    function initializetimer(){setTimeout(function () { initialize(); }, 1);}
     addLoadEvent(initializetimer);
       //google.setOnLoadCallback(initialize);
       
