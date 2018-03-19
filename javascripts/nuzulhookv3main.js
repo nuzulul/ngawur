@@ -67,23 +67,11 @@ document.getElementById('nuzulhook_nav').innerHTML = "<div id=\"pages\"><div cla
 RunSlideShow("nuzulhook_header_top_image","nuzulhook_header_top","https://sites.google.com/site/nuzulz/download/image-unair.jpg;https://sites.google.com/site/nuzulz/download/image-fkp-unair-5.jpg;https://sites.google.com/site/nuzulz/download/image-rsua.jpg",5);
 
 var tag = document.createElement("script");
-tag.src = "https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js";
-document.getElementsByTagName("body")[0].appendChild(tag);
-
-var tag = document.createElement("script");
-tag.src = "https://nuzulul.github.io/ngawur/javascripts/jquery.lightbox-0.5.js";
+tag.src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js";
 document.getElementsByTagName("body")[0].appendChild(tag);
 
 var tag = document.createElement("script");
 tag.src = "https://connect.facebook.net/en_US/all.js";
-document.getElementsByTagName("body")[0].appendChild(tag);
-
-var tag = document.createElement("script");
-tag.src = "https://nuzulul.github.io/ngawur/javascripts/fb_gallery.js";
-document.getElementsByTagName("body")[0].appendChild(tag);
-
-var tag = document.createElement("script");
-tag.src = "https://nuzulul.github.io/ngawur/javascripts/galeri.js";
 document.getElementsByTagName("body")[0].appendChild(tag);
 
 var tag = document.createElement("script");
