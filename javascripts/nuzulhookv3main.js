@@ -143,6 +143,7 @@ document.getElementById("nuzulhook_sidebar_top").innerHTML= document.getElementB
 document.getElementById("nuzulhook_sidebar_bottom").innerHTML= document.getElementById("nuzulhook_sidebar_bottom_content").innerHTML;
 document.getElementById("nuzulhook_footer_wrapper").innerHTML= document.getElementById("nuzulhook_footer_wrapper_content").innerHTML;
 
+if (url.indexOf("artikel_detail") !=-1) {
 var disqus_shortname = 'nuzulul';
 var disqus_title = mytitle;
 var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
@@ -151,6 +152,7 @@ dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
 
 var url = document.URL;
 document.getElementById('nuzulhook_share').innerHTML = '<iframe src="//www.facebook.com/plugins/like.php?href='+url+'&width&layout=button_count&action=like&show_faces=false&share=true&height=35&appId=109267179132135" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:20px;width:190px;" allowTransparency="true"></iframe>';
+}
 
 }
 addLoadEvent(loadScript);
