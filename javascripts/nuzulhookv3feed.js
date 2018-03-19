@@ -7,19 +7,7 @@ if (url == 'http://nuzulul-fkp09.web.unair.ac.id/' || url == 'file:///C:/Users/P
 
     function initialize2() {
     
-      var feed = new google.feeds.Feed("http://feeds.feedburner.com/hook-blog-modification");
-      feed.load(function(result) {
-        if (!result.error || result.error) {
-          var container = document.createElement("div");
-          for (var i = 0; i < result.feed.entries.length; i++) {
-            var entry = result.feed.entries[i];
-            var div2 = document.createElement("li");
-            div2.innerHTML = '<a href="'+entry.link+'">'+entry.title+'</a>';
-            container.appendChild(div2);
-          }
-          document.getElementById("feed").innerHTML = document.getElementById("feed").innerHTML+'<div class="templatemo_box  adddata1">	 <a href="http://nuzulul-fkp09.web.unair.ac.id/"><h2><span></span>Semua Kategori</h2></a> <div class="body"><div class="news_box"> <ul class="beranda_menu">'+document.getElementsByClassName('side_menu')[0].innerHTML+'</ul> <div class="cleaner"></div></div></div></div>';
-        }
-      });
+    document.getElementById("feed").innerHTML = document.getElementById("feed").innerHTML+'<div class="templatemo_box  adddata1">	 <a href="http://nuzulul-fkp09.web.unair.ac.id/"><h2><span></span>Semua Kategori</h2></a> <div class="body"><div class="news_box"> <ul class="beranda_menu">'+document.getElementsByClassName('side_menu')[0].innerHTML+'</ul> <div class="cleaner"></div></div></div></div>';
       
       var feed = new google.feeds.Feed("http://feeds.feedburner.com/hook-blog-modification");
       feed.load(function(result) {
