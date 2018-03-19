@@ -75,7 +75,7 @@ if (url == 'http://nuzulul-fkp09.web.unair.ac.id/' || url == 'file:///C:/Users/P
             div2.innerHTML = '<a href="'+entry.link+'">'+entry.content+'</a>';
             container.appendChild(div2);
           }
-          document.getElementById("nuzulhook_sidebar_bottom").innerHTML = document.getElementById("nuzulhook_sidebar_bottom").innerHTML+'<div class="nuzulhook_box  adddata1">	 <a href="http://nuzulul.disqus.com/latest.rss"><h2><span></span>Komentar Terbaru</h2></a> <div class="body"><div class="news_box"> <ul class="side_menu">'+container.innerHTML+'</ul> <div class="cleaner"></div></div></div></div>';
+          document.getElementById("nuzulhook_sidebar_bottom").innerHTML = document.getElementById("nuzulhook_sidebar_bottom").innerHTML+'<div class="nuzulhook_box  adddata1">	 <a target="_blank" href="http://feeds.feedburner.com/hook-disqus"><h2><span></span>Komentar Terbaru</h2></a> <div class="body"><div class="news_box"> <ul class="side_menu">'+container.innerHTML+'</ul> <div class="cleaner"></div></div></div></div>';
         }
       });
 
@@ -102,7 +102,7 @@ else if (url.indexOf("artikel_detail") !=-1)
             div2.innerHTML = '<a href="'+entry.link+'">'+entry.content+'</a>';
             container.appendChild(div2);
           }
-          document.getElementById("nuzulhook_sidebar_bottom").innerHTML = document.getElementById("nuzulhook_sidebar_bottom").innerHTML+'<div class="nuzulhook_box  adddata1">	 <a href="http://nuzulul.disqus.com/latest.rss"><h2><span></span>Komentar Terbaru</h2></a> <div class="body"><div class="news_box"> <ul class="side_menu">'+container.innerHTML+'</ul> <div class="cleaner"></div></div></div></div>';
+          document.getElementById("nuzulhook_sidebar_bottom").innerHTML = document.getElementById("nuzulhook_sidebar_bottom").innerHTML+'<div class="nuzulhook_box  adddata1">	 <a target="_blank" href="http://feeds.feedburner.com/hook-disqus"><h2><span></span>Komentar Terbaru</h2></a> <div class="body"><div class="news_box"> <ul class="side_menu">'+container.innerHTML+'</ul> <div class="cleaner"></div></div></div></div>';
         }
       });
       
