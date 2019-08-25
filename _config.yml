@@ -5,8 +5,8 @@ author: Nuzulul Zulkarnain Haq
 email: nuzulz@gmail.com
 description: "nuzulul komputer teknologi" # You can edit this line in _config.yml. It will appear in your document head meta and in your feed.xml site description
 keywords: "nuzulul"
-baseurl: "/" # the subpath of your site, e.g. /blog/
-url: "https://ngawur.netlify.com" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "" # the base hostname & protocol for your site
 locale: en_US
 
 ### Personal info and site tools info:
