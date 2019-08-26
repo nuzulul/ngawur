@@ -1,18 +1,18 @@
 ### Site info:
-title: Nuzulul Zulkarnain Haq
+title: NGAWUR
 tagline: Welcome to the club !
-author: Nuzulul Zulkarnain Haq
-email: nuzulz@gmail.com
-description: "nuzulul komputer teknologi" # You can edit this line in _config.yml. It will appear in your document head meta and in your feed.xml site description
-keywords: "nuzulul"
+author: NGAWUR
+email: ngawur@gmail.com
+description: "NGAWUR" # You can edit this line in _config.yml. It will appear in your document head meta and in your feed.xml site description
+keywords: "NGAWUR"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
 locale: en_US
 
 ### Personal info and site tools info:
-twitter_username: nuzululzh
-github_username:  nuzulul
-disqus_shortname: nuzulul
+twitter_username: ngawur
+github_username:  ngawur
+disqus_shortname: ngawur
 favicon:     "/images/favicon.jpg"
 aboutme: Welcome to the club guys. # these are shown on aboutme-sidebar.
 aboutme_photo: https://i.imgur.com/Mdc4szJl.jpg# your photo.
