@@ -9,4 +9,4 @@ tags:
 comments: true
 
 ---
-ini adalah posting percobaan test gpg
+ini adalah posting percobaan test gpg 2
