@@ -29,5 +29,5 @@ fields:
   name: comments
   label: comments
 pages:
-- _posts/halo-gaes.md
 - _posts/coba-maneh-gaes.md
+- _posts/halo-gaes.md
