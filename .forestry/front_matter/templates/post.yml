@@ -31,6 +31,6 @@ fields:
   label: comments
   default: true
 pages:
-- _posts/tes.md
 - _posts/coba-maneh-gaes.md
+- _posts/tes.md
 - _posts/halo-gaes.md
