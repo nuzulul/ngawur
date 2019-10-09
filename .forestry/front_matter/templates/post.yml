@@ -16,8 +16,9 @@ fields:
   config:
     required: false
     date_format: YYYY-MM-DD
-    time_format: ''
+    time_format: h:mm A ZZ
     display_utc: true
+    export_format: YYYY-MM-DD h:mm A ZZ
   default: now
 - type: list
   name: categories
