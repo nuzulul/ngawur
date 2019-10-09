@@ -5,12 +5,20 @@ fields:
 - type: text
   name: layout
   label: layout
+  default: post
 - type: text
   name: title
   label: title
-- type: text
-  name: modified
+- name: modified
+  type: datetime
   label: modified
+  description: ''
+  config:
+    required: false
+    date_format: YYYY-MM-DD
+    time_format: HH:MM:SS
+    display_utc: false
+  default: now
 - type: list
   name: categories
   label: categories
