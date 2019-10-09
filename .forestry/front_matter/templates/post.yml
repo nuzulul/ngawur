@@ -16,7 +16,7 @@ fields:
   config:
     required: false
     date_format: YYYY-MM-DD
-    time_format: HH:MM:SS
+    time_format: ''
     display_utc: true
   default: now
 - type: list
