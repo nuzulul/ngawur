@@ -17,7 +17,7 @@ fields:
     required: false
     date_format: YYYY-MM-DD
     time_format: HH:MM:SS
-    display_utc: false
+    display_utc: true
   default: now
 - type: list
   name: categories
