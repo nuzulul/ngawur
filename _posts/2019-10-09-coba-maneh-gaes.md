@@ -2,8 +2,10 @@
 layout: post
 title: coba maneh gaes
 modified: ''
-categories: []
-tags: []
+categories:
+- gaes
+tags:
+- halo
 comments: true
 
 ---
