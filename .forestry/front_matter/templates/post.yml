@@ -28,6 +28,7 @@ fields:
 - type: boolean
   name: comments
   label: comments
+  default: true
 pages:
 - _posts/coba-maneh-gaes.md
 - _posts/halo-gaes.md
