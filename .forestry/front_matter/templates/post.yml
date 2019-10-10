@@ -16,9 +16,9 @@ fields:
   config:
     required: false
     date_format: YYYY-MM-DD
-    time_format: HH:MM:SS
+    time_format: HH:mm:ss
     display_utc: true
-    export_format: YYYY-MM-DD HH:MM:SS
+    export_format: YYYY-MM-DD HH:mm:ss
   default: now
 - name: modified
   type: datetime
@@ -27,9 +27,9 @@ fields:
   config:
     required: false
     date_format: YYYY-MM-DD
-    time_format: HH:MM:SS
+    time_format: HH:mm:ss
     display_utc: true
-    export_format: YYYY-MM-DD HH:MM:SS
+    export_format: YYYY-MM-DD HH:mm:ss
   default: now
 - type: list
   name: categories
