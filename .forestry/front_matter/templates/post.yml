@@ -41,6 +41,7 @@ fields:
   label: comments
   default: true
 pages:
+- _posts/2019-08-03-percobaan-gaes.md
 - _posts/aku.md
 - _posts/coba-maneh-gaes.md
 - _posts/tes.md
