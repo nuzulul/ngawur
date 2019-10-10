@@ -42,11 +42,5 @@ fields:
   label: comments
   default: true
 pages:
-- _posts/tes.md
-- _posts/3.md
-- _posts/2.md
-- _posts/1.md
-- _posts/coba-maneh-gaes.md
-- _posts/aku.md
+- _posts/l.md
 - _posts/2019-08-03-percobaan-gaes.md
-- _posts/halo-gaes.md
