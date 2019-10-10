@@ -42,6 +42,7 @@ fields:
   label: comments
   default: true
 pages:
+- _posts/3.md
 - _posts/2.md
 - _posts/1.md
 - _posts/coba-maneh-gaes.md
