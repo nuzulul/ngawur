@@ -7,7 +7,7 @@ categories:
 tags:
 - halo
 comments: true
-date: 2019-10-10 09:50:07 +0000
+date: 2019-10-01 09:50:07 +0000
 
 ---
 ini adalah posting percobaan test gpg sukses
