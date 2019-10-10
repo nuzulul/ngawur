@@ -9,6 +9,16 @@ fields:
 - type: text
   name: title
   label: title
+- name: date
+  type: datetime
+  label: date
+  description: ''
+  config:
+    required: false
+    date_format: YYYY-MM-DD
+    time_format: h:mm A ZZ
+    display_utc: true
+  default: now
 - name: modified
   type: datetime
   label: modified
