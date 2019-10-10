@@ -42,6 +42,7 @@ fields:
   label: comments
   default: true
 pages:
+- _posts/m.md
 - _posts/k.md
 - _posts/l.md
 - _posts/2019-08-03-percobaan-gaes.md
