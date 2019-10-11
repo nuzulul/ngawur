@@ -42,6 +42,7 @@ fields:
   label: comments
   default: true
 pages:
+- _posts/n.md
 - _posts/j.md
 - _posts/m.md
 - _posts/k.md
