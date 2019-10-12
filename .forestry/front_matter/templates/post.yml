@@ -47,5 +47,6 @@ fields:
   label: comments
   default: true
 pages:
+- _posts/aku-tes-forestry.md
 - _posts/ztest-forestry.md
 - _posts/test-forestry.md
