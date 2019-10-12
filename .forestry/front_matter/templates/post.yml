@@ -41,3 +41,5 @@ fields:
   name: comments
   label: comments
   default: true
+pages:
+- _posts/aku-tes-forestry.md
