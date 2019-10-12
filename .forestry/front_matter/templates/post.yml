@@ -47,4 +47,5 @@ fields:
   label: comments
   default: true
 pages:
+- _posts/ztest-forestry.md
 - _posts/test-forestry.md
