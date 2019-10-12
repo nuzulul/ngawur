@@ -15,10 +15,10 @@ fields:
   description: ''
   config:
     required: false
-    date_format: YYYY-MM-DD
-    time_format: HH:mm:ss
+    date_format: ''
+    time_format: ''
     display_utc: true
-    export_format: YYYY-MM-DD HH:mm:ss
+    export_format: ''
   default: now
 - name: modified
   type: datetime
@@ -26,10 +26,10 @@ fields:
   description: ''
   config:
     required: false
-    date_format: YYYY-MM-DD
-    time_format: HH:mm:ss
+    date_format: ''
+    time_format: ''
     display_utc: true
-    export_format: YYYY-MM-DD HH:mm:ss
+    export_format: ''
   default: now
 - type: list
   name: categories
@@ -41,5 +41,3 @@ fields:
   name: comments
   label: comments
   default: true
-pages:
-- _posts/tes-forestry.md
