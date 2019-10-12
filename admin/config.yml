@@ -11,11 +11,12 @@ collections:
     folder: "_posts" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    summary: "{{title}} -- {{year}}/{{month}}/{{day}}"
     fields: # The fields for each document, usually in front matter
       - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Category", name: "categories", widget: "string"}
-      - {label: "Tag", name: "tags", widget: "string"}
+      - {label: "Category", name: "categories", widget: "list"}
+      - {label: "Tag", name: "tags", widget: "list"}
       - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD HH:mm:ss"}
       - {label: "Modified Date", name: "modified", widget: "datetime", format: "YYYY-MM-DD HH:mm:ss"}
       - {label: "Featured Image", name: "thumbnail", widget: "image" , required: false}
@@ -24,4 +25,3 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
 site_url: https://ngawur.netlify.com/
 display_url: https://ngawur.netlify.com/
-logo_url: https://ngawur.netlify.com/uploads/narojil-a.jpg
