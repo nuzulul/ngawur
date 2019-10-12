@@ -9,16 +9,22 @@ fields:
 - type: text
   name: title
   label: title
+- type: list
+  name: categories
+  label: categories
+- type: list
+  name: tags
+  label: tags
 - name: date
   type: datetime
   label: date
   description: ''
   config:
     required: false
-    date_format: ''
-    time_format: ''
-    display_utc: true
-    export_format: ''
+    date_format: YYYY-MM-DD
+    time_format: HH:mm:ssZ
+    display_utc: false
+    export_format: YYYY-MM-DDTHH:mm:ssZ
   default: now
 - name: modified
   type: datetime
@@ -26,20 +32,17 @@ fields:
   description: ''
   config:
     required: false
-    date_format: ''
-    time_format: ''
-    display_utc: true
-    export_format: ''
+    date_format: YYYY-MM-DD
+    time_format: HH:mm:ssZ
+    display_utc: false
+    export_format: YYYY-MM-DDTHH:mm:ssZ
   default: now
-- type: list
-  name: categories
-  label: categories
-- type: list
-  name: tags
-  label: tags
+- name: thumbnail
+  type: file
+  config:
+    maxSize: '5'
+  label: thumbnail
 - type: boolean
   name: comments
   label: comments
   default: true
-pages:
-- _posts/aku-tes-forestry.md
