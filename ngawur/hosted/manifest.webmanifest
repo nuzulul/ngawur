@@ -1,0 +1,17 @@
+{
+	"dir" : "ltr",
+	"lang" : "en",
+	"name" : "Hello World",
+	"scope" : "/ngawur/hosted/",
+	"display" : "browser",
+	"start_url" : "https://ngawur.netlify.com/ngawur/hosted/",
+	"short_name" : "Hello World",
+	"theme_color" : "transparent",
+	"description" : "",
+	"orientation" : "any",
+	"background_color" : "transparent",
+	"related_applications" : "",
+	"prefer_related_applications" : "false",
+	"icons" : [],
+	"generated" : "true"
+}
