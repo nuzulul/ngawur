@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
 # This line should *not* be indented
-# publish_mode: editorial_workflow
+publish_mode: editorial_workflow
 # This line should *not* be indented
 media_folder: "uploads" # Media files will be stored in the repo under images/uploads
 collections:
@@ -24,5 +24,5 @@ collections:
       - {label: "Rating (scale of 1-5)", name: "rating", widget: "number" , required: false}
       - {label: "Comments", name: "comments", widget: "boolean", default: true}
       - {label: "Body", name: "body", widget: "markdown"}
-site_url: https://ngawur.netlify.com/
-display_url: https://ngawur.netlify.com/
+site_url: https://ngawur.netlify.app/
+display_url: https://ngawur.netlify.app/
