@@ -194,7 +194,6 @@ excerpt_separator: <!-- more -->
 
 exclude:
   - vendor
-  - lazyhandling.rb
   - Gemfile
   - Gemfile.lock
   - LICENSE

@@ -262,6 +262,7 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
+  bundler
   eventmachine (= 1.2.7)!
   github-pages
   rake
