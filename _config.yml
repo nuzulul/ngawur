@@ -191,3 +191,12 @@ kramdown:
 plugins: [jekyll-paginate]
 paginate: 5
 excerpt_separator: <!-- more -->
+
+exclude:
+  - vendor
+  - lazyhandling.rb
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - Rakefile
