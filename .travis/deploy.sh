@@ -13,7 +13,7 @@ cd _site
 git config user.name "${GITHUB_NAME}"
 git config user.email "${GITHUB_EMAIL}"
 
-git add -all
+git add --all
 git commit --allow-empty -m "[ci skip] [skip ci] Page release #$TRAVIS_BUILD_NUMBER"
 git push -q --force https://${GITHUB_TOKEN}@github.com/nuzulul/ngawur.git HEAD:site
 
