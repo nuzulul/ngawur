@@ -5,13 +5,13 @@
     <description>NGAWUR</description>
     <link>/</link>
     <atom:link href="/zfeed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 13 Nov 2020 12:32:16 +0000</pubDate>
-    <lastBuildDate>Fri, 13 Nov 2020 12:32:16 +0000</lastBuildDate>
+    <pubDate>Fri, 13 Nov 2020 17:35:41 +0000</pubDate>
+    <lastBuildDate>Fri, 13 Nov 2020 17:35:41 +0000</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
       <item>
         <title>testing lagi</title>
-        <description>&lt;p&gt;tes build&lt;/p&gt;
+        <description>&lt;p&gt;tes build 7&lt;/p&gt;
 </description>
         <pubDate>Thu, 12 Nov 2020 13:12:26 +0000</pubDate>
         <link>/2020/11/12/testing-lagi.html</link>
