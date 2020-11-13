@@ -11,6 +11,6 @@ rm -R _site/
 
 git add -fA
 git commit --allow-empty -m "Page release ${CIRCLE_BUILD_NUM} from ${CIRCLE_BRANCH}"
-git push -q --force https://${GITHUB_TOKEN}@github.com/nuzulul/ngawur.git ${CIRCLE_BRANCH}:circleci
+git push -q --force https://${GITHUB_TOKEN}@github.com/nuzulul/ngawur.git:circleci
 
 echo "deployed successfully"
