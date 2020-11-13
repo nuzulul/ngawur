@@ -10,7 +10,7 @@ mv _site/* .
 rm -R _site/
 
 git add -fA
-git commit --allow-empty -m "[ci skip] [skip ci] Page release ${CIRCLE_BUILD_NUM} from ${CIRCLE_BRANCH}"
+git commit --allow-empty -m "[ci skip] [skip ci] Page release #$TRAVIS_BUILD_NUMBER"
 git push -q --force https://${GITHUB_TOKEN}@github.com/nuzulul/ngawur.git HEAD:site
 
 echo "deployed successfully"
