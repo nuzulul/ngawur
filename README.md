@@ -1,4 +1,0 @@
-ngawur
-======
-
-ngawur
