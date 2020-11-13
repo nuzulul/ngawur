@@ -3,9 +3,6 @@ jobs:
   deploy:
     docker:
       - image: circleci/ruby:latest
-        environment:
-          USER_NAME: nuzulul
-          USER_EMAIL: nuzulz@gmail.com
     steps:
       - checkout
       - run:

@@ -2,10 +2,10 @@ git config user.name "${GITHUB_NAME}"
 git config user.email "${GITHUB_EMAIL}"
 
 git stash
-git checkout circleci
-git pull origin circleci
+git checkout site
+git pull origin site
 
-find . -maxdepth 1 ! -name '_site' ! -name '.git' ! -name '.gitignore' ! -name '.circleci' -exec rm -rf {} \;
+find . -maxdepth 1 ! -name '_site' ! -name '.git' ! -name '.gitignore' ! -name '.travis' -exec rm -rf {} \;
 mv _site/* .
 rm -R _site/
 
