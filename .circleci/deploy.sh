@@ -10,7 +10,7 @@ mv _site/* .
 rm -R _site/
 
 git add -fA
-git commit --allow-empty -m "Page release ${CIRCLE_BUILD_NUM} from ${CIRCLE_BRANCH}"
+git commit --allow-empty -m "[ci skip] Page release ${CIRCLE_BUILD_NUM} from ${CIRCLE_BRANCH}"
 git push -q --force https://${GITHUB_TOKEN}@github.com/nuzulul/ngawur.git
 
 echo "deployed successfully"
