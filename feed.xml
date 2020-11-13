@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>NGAWUR</title>
+    <description>NGAWUR</description>
+    <link>/</link>
+    <atom:link href="/zfeed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 13 Nov 2020 01:09:00 +0000</pubDate>
+    <lastBuildDate>Fri, 13 Nov 2020 01:09:00 +0000</lastBuildDate>
+    <generator>Jekyll v3.9.0</generator>
+    
+      <item>
+        <title>testing lagi</title>
+        <description>&lt;p&gt;tes build&lt;/p&gt;
+</description>
+        <pubDate>Thu, 12 Nov 2020 13:12:26 +0000</pubDate>
+        <link>/2020/11/12/testing-lagi.html</link>
+        <guid isPermaLink="true">/2020/11/12/testing-lagi.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>percobaan baru</title>
+        <description>&lt;p&gt;tes percobaan travis&lt;/p&gt;
+</description>
+        <pubDate>Wed, 11 Nov 2020 16:13:13 +0000</pubDate>
+        <link>/baru/2020/11/11/percobaan-baru.html</link>
+        <guid isPermaLink="true">/baru/2020/11/11/percobaan-baru.html</guid>
+        
+        <category>new</category>
+        
+        
+        <category>baru</category>
+        
+      </item>
+    
+      <item>
+        <title>aku tes forestry</title>
+        <description>&lt;p&gt;aku tes forestry&lt;/p&gt;
+</description>
+        <pubDate>Sat, 12 Oct 2019 21:53:09 +0000</pubDate>
+        <link>/2019/10/12/aku-tes-forestry.html</link>
+        <guid isPermaLink="true">/2019/10/12/aku-tes-forestry.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>ztest forestry</title>
+        <description>&lt;p&gt;ztest forestry&lt;/p&gt;
+</description>
+        <pubDate>Sat, 12 Oct 2019 16:29:12 +0000</pubDate>
+        <link>/tes/2019/10/12/ztest-forestry.html</link>
+        <guid isPermaLink="true">/tes/2019/10/12/ztest-forestry.html</guid>
+        
+        <category>tes</category>
+        
+        
+        <category>tes</category>
+        
+      </item>
+    
+      <item>
+        <title>test forestry</title>
+        <description>&lt;p&gt;test forestry&lt;/p&gt;
+</description>
+        <pubDate>Sat, 12 Oct 2019 16:22:51 +0000</pubDate>
+        <link>/tes/2019/10/12/test-forestry.html</link>
+        <guid isPermaLink="true">/tes/2019/10/12/test-forestry.html</guid>
+        
+        <category>tes</category>
+        
+        
+        <category>tes</category>
+        
+      </item>
+    
+  </channel>
+</rss>
