@@ -1,4 +1,3 @@
-include: _redirects
 ### Site info:
 title: NGAWUR
 tagline: Welcome to NGAWUR !
@@ -191,6 +190,9 @@ kramdown:
 plugins: [jekyll-paginate]
 paginate: 5
 excerpt_separator: <!-- more -->
+
+include: 
+  - _redirects
 
 exclude:
   - vendor
