@@ -6,5 +6,8 @@ install:
   - bundle install
 
 script: bundle exec jekyll build
+
 after_success:
     - bash .travis/deploy.sh
+    
+cache: bundler
