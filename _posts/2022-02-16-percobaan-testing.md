@@ -10,4 +10,6 @@ modified: 2022-02-16T13:11:49.047Z
 rating: 5
 comments: true
 ---
-ini adalah test percobaan
+ini adalah test percobaan 
+
+![](/uploads/emoji-004-indra-cahya.jpg)
