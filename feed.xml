@@ -5,9 +5,24 @@
     <description>NGAWUR</description>
     <link>/</link>
     <atom:link href="/zfeed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 09 Feb 2022 02:27:16 +0000</pubDate>
-    <lastBuildDate>Wed, 09 Feb 2022 02:27:16 +0000</lastBuildDate>
+    <pubDate>Wed, 16 Feb 2022 13:14:20 +0000</pubDate>
+    <lastBuildDate>Wed, 16 Feb 2022 13:14:20 +0000</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
+    
+      <item>
+        <title>percobaan testing</title>
+        <description>&lt;p&gt;ini adalah test percobaan&lt;/p&gt;
+</description>
+        <pubDate>Wed, 16 Feb 2022 13:11:49 +0000</pubDate>
+        <link>/testing/2022/02/16/percobaan-testing.html</link>
+        <guid isPermaLink="true">/testing/2022/02/16/percobaan-testing.html</guid>
+        
+        <category>testing</category>
+        
+        
+        <category>testing</category>
+        
+      </item>
     
       <item>
         <title>percobaan baru</title>
